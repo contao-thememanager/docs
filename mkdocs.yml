@@ -1,0 +1,142 @@
+# Navigation
+nav:
+    - Home: index.md
+    - Dokumentation:
+            - pages/docs/introduction/index.md
+            - pages/docs/introduction/version.md
+            - Installation:
+                    - pages/docs/installation/system.md
+                    - pages/docs/installation/install.md
+                    - pages/docs/installation/setup.md
+            - Konfiguration:
+                    - Theme:
+                          - pages/docs/configuration/theme/global.md
+                          - pages/docs/configuration/theme/fonts.md
+                          - pages/docs/configuration/theme/headings.md
+                          - pages/docs/configuration/theme/buttons.md
+                          - pages/docs/configuration/theme/components.md
+                          - pages/docs/configuration/theme/form.md
+                          - pages/docs/configuration/theme/modules.md
+                          - pages/docs/configuration/theme/header.md
+                          - pages/docs/configuration/theme/miscellaneous.md
+                          - pages/docs/configuration/theme/layout.md
+                    - pages/docs/configuration/skin.md
+                    - pages/docs/configuration/icon-set.md
+                    - pages/docs/configuration/backgrounds.md
+    - Anleitungen:
+          - pages/guides/index.md
+#    - Erweiterung:
+#          - pages/extensions/index.md
+
+# Project information
+site_url: https://contao-thememanager.github.io/
+site_author: Daniele Sciannimanica
+site_description: >-
+    Contao ThemeManager Dokumenation
+
+# Repository
+repo_name: contao-thememanager/core
+repo_url: https://github.com/contao-thememanager/core
+
+# Copyright
+copyright: Copyright &copy; 2024 Oveleon
+
+site_name: Contao ThemeManager
+theme:
+    name: material
+    language: de
+    custom_dir: docs/overwrites
+    logo: assets/logo.svg
+    favicon: assets/logo.svg
+    homepage: https://www.contao-thememanager.com
+    features:
+        - navigation.sections
+        - navigation.top
+        - navigation.tabs
+        - navigation.footer
+        - navigation.prune
+        - navigation.tracking
+        - announce.dismiss
+        - content.action.edit
+        - content.action.view
+        - content.code.annotate
+        - content.code.copy
+        - search.highlight
+        - search.suggest
+        - toc.follow
+    palette:
+        # Palette toggle for automatic mode
+        -   media: "(prefers-color-scheme)"
+            toggle:
+                icon: material/brightness-auto
+                name: Switch to light mode
+
+        # Palette toggle for light mode
+        -   media: "(prefers-color-scheme: light)"
+            scheme: default
+            primary: deep purple
+            accent: purple
+            toggle:
+                icon: material/brightness-7
+                name: Switch to dark mode
+
+        # Palette toggle for dark mode
+        -   media: "(prefers-color-scheme: dark)"
+            scheme: slate
+            primary: deep purple
+            accent: purple
+            toggle:
+                icon: material/brightness-4
+                name: Switch to system preference
+
+plugins:
+    - search:
+          lang: de
+
+extra:
+    generator: false
+
+extra_css:
+    - stylesheets/extra.css
+
+markdown_extensions:
+    - abbr
+    - admonition
+    - attr_list
+    - def_list
+    - footnotes
+    - md_in_html
+    - toc:
+          permalink: true
+    - pymdownx.arithmatex:
+          generic: true
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+          emoji_index: !!python/name:materialx.emoji.twemoji
+    - pymdownx.highlight:
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.keys
+    - pymdownx.magiclink:
+          repo_url_shorthand: true
+          user: squidfunk
+          repo: mkdocs-material
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences:
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.tabbed:
+          alternate_style: true
+    - pymdownx.tasklist:
+          custom_checkbox: true
+    - pymdownx.tilde
