@@ -1,0 +1,2 @@
+# docs
+Contao ThemeManager | Documentation
