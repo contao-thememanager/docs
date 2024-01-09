@@ -42,8 +42,8 @@ site_description: >-
     Contao ThemeManager Dokumentation
 
 # Repository
-repo_name: contao-thememanager/docs
-repo_url: https://github.com/contao-thememanager/docs
+repo_name: contao-thememanager/core
+repo_url: https://github.com/contao-thememanager/core
 
 # Edit
 edit_uri: https://github.com/contao-thememanager/docs/edit/main/docs
