@@ -8,43 +8,49 @@ Eine Installationsanleitung kann
 
 ## Installation des ThemeManagers
 
-### Via Kommandozeile
-Für die Installation über die Kommandozeile muss [Composer](https://getcomposer.org/) auf dem System installiert sein.
+!!! info
+    Für die Installation über die Kommandozeile muss [Composer](https://getcomposer.org/) auf dem System installiert sein.
 
-#### Paket installieren
-```shell
-composer require contao-thememanager/core 2.0
-```
+=== "Composer"
 
-#### Datenbank migrieren
-```cmd
-php vendor/bin/contao-console contao:migrate [options]
-```
+    **Installation**
+    ```shell
+    composer require contao-thememanager/core 2.0
+    ```
+    **Migration**
+    ```shell
+    php vendor/bin/contao-console contao:migrate [options]
+    ```
+
+=== "Contao Manager"
+
+    Im Contao Manager steht der _ThemeManager_ unter dem Namen `Contao ThemeManager` zur Verfügung.
+    !!! tip
+        Hier findest Du [eine Anleitung, wie Erweiterungen über den Contao Manager installiert](https://docs.contao.org/manual/de/installation/erweiterungen-installieren/) werden können
 
 
-### Via Contao Manager
-Die Installation ist üblich wie die jeder anderen Erweiterung, welche über den Contao Manager zu finden
-ist.
+### Contao Manager installieren
 
 Der Contao Manager kann über ``example.com/contao-manager.phar.php`` aufgerufen werden,
-``example.com`` muss hierbei  durch die eigene Domain ersetzt werden.
+``example.com`` muss hierbei durch die eigene Domain ersetzt werden.
 
-?> Hier findest Du [weitere Informationen über den Contao Manager](https://docs.contao.org/manual/de/installation/contao-manager/)
+!!! info
+    Hier findest Du [weitere Informationen über den Contao Manager](https://docs.contao.org/manual/de/installation/contao-manager/)
 
-![Contao Manager suchen](../_images/setup/1_manager_1.png)
+![Contao Manager suchen](/assets/setup/1_manager_1.png)
 1. Der Contao ThemeManager lässt sich über die Suche durch die Eingabe von ``Contao ThemeManager`` finden.
 ____
-![Paket hinzufügen](../_images/setup/1_manager_2.png)
+![Paket hinzufügen](/assets/setup/1_manager_2.png)
 
 2. Auf ``Details`` klicken, bis sich das Pop-up öffnet.
 3. Paket zur Installation hinzufügen.
 ____
-![Paket hinzufügen](../_images/setup/1_manager_3.png)
+![Paket hinzufügen](/assets/setup/1_manager_3.png)
 - Auf ``Änderung anwenden`` klicken, damit das Paket installiert wird.
 ____
-![Datenbank aktualisieren](../_images/setup/1_manager_4.png)
+![Datenbank aktualisieren](/assets/setup/1_manager_4.png)
 - Nachdem die Installation durchgelaufen ist, muss die Datenbank aktualisiert werden, hierzu klickt man auf
   ``Update Database``/``Datenbank aktualisieren``.
 ____
-![Migrationen ausführen](../_images/setup/1_manager_5.png)
+![Migrationen ausführen](/assets/setup/1_manager_5.png)
 - Im letzten Schritt müssen die neuen Felder und Tabellen angelegt werden.

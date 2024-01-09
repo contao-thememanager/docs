@@ -16,7 +16,7 @@ ___
 
 <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __Systemanforderungen__
+-   :octicons-cpu-24:{ .lg .middle } __Systemanforderungen__
 
     ---
 
@@ -26,7 +26,7 @@ ___
 
     [:octicons-arrow-right-24: Systemanforderungen](/pages/docs/installation/system/)
 
--   :fontawesome-brands-markdown:{ .lg .middle } __Download und Installation__
+-   :octicons-download-24:{ .lg .middle } __Download und Installation__
 
     ---
 
@@ -35,7 +35,7 @@ ___
 
     [:octicons-arrow-right-24: Installation](/pages/docs/installation/install/)
 
--   :material-format-font:{ .lg .middle } __Ersteinrichtung__
+-   :octicons-book-24:{ .lg .middle } __Ersteinrichtung__
 
     ---
 
@@ -44,7 +44,7 @@ ___
 
     [:octicons-arrow-right-24: Ersteinrichtung](/pages/docs/installation/setup/)
 
--   :material-scale-balance:{ .lg .middle } __ThemeManager Demo__
+-   :octicons-device-desktop-24:{ .lg .middle } __ThemeManager Demo__
 
     ---
 
