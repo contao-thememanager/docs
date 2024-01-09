@@ -24,7 +24,7 @@ ___
     Contao ThemeManager entspricht. Erfahre mehr über die notwendigen Voraussetzungen, um den Contao ThemeManager nutzen zu
     können.
 
-    [:octicons-arrow-right-24: Systemanforderungen](/pages/docs/installation/system/)
+    [:octicons-arrow-right-24: Systemanforderungen](../installation/system.md)
 
 -   :octicons-download-24:{ .lg .middle } __Download und Installation__
 
@@ -33,7 +33,7 @@ ___
     Hier erfährst du, wie du den Contao ThemeManager herunterladen und erfolgreich in deine Contao-Installation integrieren
     kannst. Schritt-für-Schritt-Anleitungen helfen dir, das Plugin reibungslos zu installieren.
 
-    [:octicons-arrow-right-24: Installation](/pages/docs/installation/install/)
+    [:octicons-arrow-right-24: Installation](../installation/install.md)
 
 -   :octicons-book-24:{ .lg .middle } __Ersteinrichtung__
 
@@ -42,7 +42,7 @@ ___
     Nach der Installation ist es wichtig, den Contao ThemeManager korrekt einzurichten. Entdecke, wie du die ersten
     Konfigurationsschritte durchführst und das Theme-Management optimal auf deine Bedürfnisse abstimmst.
 
-    [:octicons-arrow-right-24: Ersteinrichtung](/pages/docs/installation/setup/)
+    [:octicons-arrow-right-24: Ersteinrichtung](../installation/setup.md)
 
 -   :octicons-device-desktop-24:{ .lg .middle } __ThemeManager Demo__
 

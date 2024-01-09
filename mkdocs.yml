@@ -36,14 +36,17 @@ nav:
 #          - pages/extensions/index.md
 
 # Project information
-site_url: https://contao-thememanager.github.io/
-site_author: Daniele Sciannimanica
+site_url: https://contao-thememanager.github.io/docs/
+site_author: co-authored by Daniele Sciannimanica, Sebastian Zoglowek
 site_description: >-
-    Contao ThemeManager Dokumenation
+    Contao ThemeManager Dokumentation
 
 # Repository
-repo_name: contao-thememanager/core
-repo_url: https://github.com/contao-thememanager/core
+repo_name: contao-thememanager/docs
+repo_url: https://github.com/contao-thememanager/docs
+
+# Edit
+edit_uri: https://github.com/contao-thememanager/docs/edit/main/docs
 
 # Copyright
 copyright: Copyright &copy; 2024 Oveleon

@@ -26,11 +26,11 @@ generieren.
 ![Compiler Report](../../../assets/setup/3_theme_6.png)
 Nach erfolgreichem Abschluss wirst du zum Compiler-Report weitergeleitet. Hier werden drei Dateien erstellt:
 
-| Datei           | Funktion                                                                                                                                 |
-|-----------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| _icon.css       | Beinhaltet das generierte Stylesheet der [Icons](configuration/icon-set), die über die Systemeinstellungen eingebunden wurden.           |
-| _background.css | Beinhaltet das generierte Stylesheet der [Hintergrundbilder](configuration/backgrounds), die über die Dateiverwaltung festgelegt wurden. |
-| _theme.css      | Enthält das [anpassbare Framework](configuration/theme) des Contao ThemeManagers.                                                        |
+| Datei           | Funktion                                                                                                                                       |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| _icon.css       | Beinhaltet das generierte Stylesheet der [Icons](../configuration/icon-set.md), die über die Systemeinstellungen eingebunden wurden.           |
+| _background.css | Beinhaltet das generierte Stylesheet der [Hintergrundbilder](../configuration/backgrounds.md), die über die Dateiverwaltung festgelegt wurden. |
+| _theme.css      | Enthält das [anpassbare Framework](../configuration/theme/overview.md) des Contao ThemeManagers.                                               |
 
 ## Layout(s) erstellen
 In diesem Abschnitt geht es um die Anpassung der Layouts, die für eine optimale Nutzung des ThemeManagers erforderlich
@@ -86,7 +86,7 @@ Dieses Layout bedient sich zusätzlich der in Contao integrierten Layoutbereiche
 - Rechte Spalte
 
 !!! info
-    Die in der [Theme-Konfiguration](/pages/docs/configuration/theme/global/) zu findende Palette **Überschriften (Inhaltsbereich)** dient lediglich diesem Layout.
+    Die in der [Theme-Konfiguration](../configuration/theme/global.md) zu findende Palette **Überschriften (Inhaltsbereich)** dient lediglich diesem Layout.
 
 Um sicherzustellen, dass Artikel sowohl ober- als auch unterhalb des Hauptspaltenbereichs angezeigt werden können,
 kannst du die folgenden Schritte befolgen.
@@ -129,7 +129,7 @@ Die Theme-Konfiguration lässt sich nun über die Theme-Übersicht mithilfe des
 
 ___
 
-Im nächsten Abschnitt [Theme konfigurieren](configuration/theme) erfährst du im Detail, welche Optionen in der
+Im nächsten Abschnitt [Theme konfigurieren](../configuration/theme/overview.md) erfährst du im Detail, welche Optionen in der
 Theme-Konfiguration verfügbar sind und wie sie das Aussehen und Verhalten deines Themes beeinflussen.
 
 [^1]:
@@ -142,5 +142,5 @@ diese Datei an erster Stelle eingebunden werden. In bestimmten Ausnahmen wie z.B
 
 [^2]:
 Es empfiehlt sich die _background.css in der Reihenfolge immer als
-letzte Stylesheet-Datei einzubinden, damit das Überschreiben dieser über einen eigenen [Skin](configuration/skin)
+letzte Stylesheet-Datei einzubinden, damit das Überschreiben dieser über einen eigenen [Skin](../configuration/skin.md)
 einfacher ist.
