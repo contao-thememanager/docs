@@ -30,8 +30,8 @@ Hier findest Du eine Liste der letzten Demo-Versionen. Klicke auf die Version, d
 
 | Contao Version |                                           Product Installer                                           |                               Contao Manager Artefakt                               |
 |----------------|:-----------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------:|
-| `5.2`          |    [💾](https://www.contao-thememanager.com/files/demo/contao-thememanager-demo-5.2-1.0.0.content)    |  [💾](https://github.com/contao-thememanager/demo/blob/5.2/docs/demo/ctm-demo.zip)  |
-| `4.13`         |   [💾](https://www.contao-thememanager.com/files/demo/contao-thememanager-demo-4.13-1.0.0.content)    |  [💾](https://github.com/contao-thememanager/demo/blob/4.13/docs/demo/ctm-demo.zip) |
+| `5.2`          |    [:material-download:](https://www.contao-thememanager.com/files/demo/contao-thememanager-demo-5.2-1.0.0.content)    |  [:material-download:](https://github.com/contao-thememanager/demo/blob/5.2/docs/demo/ctm-demo.zip)  |
+| `4.13`         |   [:material-download:](https://www.contao-thememanager.com/files/demo/contao-thememanager-demo-4.13-1.0.0.content)    |  [:material-download:](https://github.com/contao-thememanager/demo/blob/4.13/docs/demo/ctm-demo.zip) |
 
 
 ## 3. Demo installieren und einrichten
@@ -67,11 +67,11 @@ Hat alles funktioniert sehen wir im nächsten Schritt das soeben hochgeladene Pr
 In der nächsten Maske prüft der _Product Installer_, ob er eine Verbindung zum Contao Manager herstellen kann. Diese wird benötigt, um das Produkt ordnungsgemäß zu installieren.
 In diesem Schritt könnten drei Szenarien auftreten. Bitte folgen Sie den Hinweisen des _Product Installers_, um Dein Projekt im Contao Manager zu authentifizieren.
 
-|    |  Installiert  | Authentifiziert | Beschreibung                                       |
-|----|:-------------:|:---------------:|:---------------------------------------------------|
-| 🟢 |       ✔       |        ✔        | Der Contao-Manager ist einsatzbereit und verbunden |
-| 🟡 |       ✔       |        ✕        | Die Authentifizierung ist ausstehend               |
-| 🔴 |       ✕       |        ✕        | Der Contao-Manager ist nicht installiert           |
+|    |   Installiert    |  Authentifiziert  | Beschreibung                                                         |
+|----|:----------------:|:-----------------:|:---------------------------------------------------------------------|
+| 🟢 | :material-check: | :material-check:  | Der Contao-Manager ist einsatzbereit und verbunden                   |
+| 🟡 | :material-check: |  :octicons-x-24:  | Die Authentifizierung ist ausstehend                                 |
+| 🔴 | :octicons-x-24:  |  :octicons-x-24:  | Der Contao-Manager ist nicht installiert                             |
 
 !!! warning 
     Seit der Contao Manager Version `1.7.0` muss das Projekt eine valide SSL-Verbindung aufweisen, um die Authentifizierungen durchzuführen.
