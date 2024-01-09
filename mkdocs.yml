@@ -96,6 +96,7 @@ theme:
                 name: Switch to system preference
 
 plugins:
+    - tags
     - glightbox
     - search:
           lang: de

@@ -1,8 +1,5 @@
 # Schriften
 
-- [Typografie](#typografie)
-- [Links](#links)
-
 ## Typografie
 
 Die Typografie-Einstellungen erlauben die Einstellung der Schriftart ($font-family), der Schriftgröße des `<body>`, der
@@ -12,87 +9,110 @@ Inhaltselementen über den Reiter Text einstellen und überschreibt die normale 
 Schriftgröße, Art, Zeilenhöhe etc. haben immer auch Einfluss auf alle weiteren Elemente. Lediglich Überschriften und
 Formulare können individuell eingestellt werden.
 
-### Schriftart<sup>$font-family-base</sup>
+### Schriftart
+`$font-family-base`
 
-Die Einstellung überschreibt die Schriftart der Webseite und kann mit mehreren Schriftarten kombiniert werden.
+Die Einstellung überschreibt die Schriftart der Webseite.
 
-> Sofern es sich nicht um eine Standard-Schriftart handelt, muss die Schrift zusätzlich im Seitenlayout eingebunden
-> werden. Zwecks Ladezeiten-Optimierung empfiehlt sich eine lokale Einbindung der Schriftarten.
+!!! warning
+    Sofern es sich nicht um eine Standard-Schriftart handelt, muss die Schrift zusätzlich im Seitenlayout eingebunden 
+    werden. Zwecks Ladezeiten-Optimierung empfiehlt sich eine lokale Einbindung der Schriftarten.
 
-| SCSS           | CSS                  |
-|----------------|----------------------|
-| `$font-family` | `var(--font-family)` |
+??? example "Verfügbare (S)CSS-Variablen"
+    
+    | SCSS           | CSS                  |
+    |----------------|----------------------|
+    | `$font-family` | `var(--font-family)` |
 
-### Schriftgröße<sup>$font-size-base</sup>
+### Schriftgröße
+`$font-size-base`
 
 Beeinflusst die Schriftgröße für normale Texte einer Webseite und kann in `px` und `rem` angegeben werden.
 
-| SCSS              | CSS              |
-|-------------------|------------------|
-| `$font-size-base` | `var(--fs-base)` |
+??? example "Verfügbare (S)CSS-Variablen"
+    
+    | SCSS              | CSS              |
+    |-------------------|------------------|
+    | `$font-size-base` | `var(--fs-base)` |
 
-### Zeilenhöhe<sup>$line-height-base</sup>
+### Zeilenhöhe
+`$line-height-base`
 
 Dient der Einstellung der vertikalen Zeilenhöhe von Schriften
 
-| SCSS                | CSS                   |
-|---------------------|-----------------------|
-| `$line-height-base` | `var(--leading-base)` |
+??? example "Verfügbare (S)CSS-Variablen"
+    
+    | SCSS                | CSS                   |
+    |---------------------|-----------------------|
+    | `$line-height-base` | `var(--leading-base)` |
 
-### Schriftfarben<sup><span>$text-color-regular</span><span>$text-color-invert</span></sup>
+### Schriftfarben
+`$text-color-regular` `$text-color-invert`
 
 Der ThemeManager liefert grundsätzlich zwei Farben für normalen Text, welche über die StyleManager-Einstellungen
 ausgewählt werden können.
 Sowohl die reguläre, als auch die invertierte Farbe, sind in den Standard-Einstellungen der Konfiguration in den meisten
 Komponenten mit diesen Farben vorbelegt.
 
-> Die StyleManager-Einstellung der Text-Farbe hat zusätzlichen Einfluss auf andere Farben wie Überschriften, Buttons,
-> Formularen etc. und kontrolliert nicht nur die Text-Farbe.
+!!! info
+    Die StyleManager-Einstellung der Text-Farbe hat zusätzlichen Einfluss auf andere Farben wie Überschriften, Buttons, 
+    Formularen etc. und kontrolliert nicht nur die Text-Farbe.
 
-| SCSS                  | CSS                      |
-|-----------------------|--------------------------|
-| `$text-color-regular` | `var(--text-clr-base)`   |
-| `$text-color-invert`  | `var(--text-clr-invert)` |
+??? example "Verfügbare (S)CSS-Variablen"
+    
+    | SCSS                  | CSS                      |
+    |-----------------------|--------------------------|
+    | `$text-color-regular` | `var(--text-clr-base)`   |
+    | `$text-color-invert`  | `var(--text-clr-invert)` |
 
-### Schriftstärken<sup><span>$font-weight-base</span><span>$font-weight-\*</span><span>$strong-font-weight</span></sup>
+### Schriftstärken
+`$font-weight-base` `$font-weight-*` `$strong-font-weight`
 
 Die Standard-Schriftstärke kann über **$font-weight-base**, die `<strong>`-Schriftstärke über $strong-font-weight
 festgelegt werden. Restliche Schriftstärken werden lediglich in der Konfiguration verwendet.
 
-!> Sofern keine Standard-Schriftart eingestellt wurde, müssen die Schriftstärken der Schriftart eingebunden werden,
-damit der Effekt sichtbar wird.
+!!! info
+    Sofern keine Standard-Schriftart eingestellt wurde, müssen die Schriftstärken der Schriftart eingebunden werden, 
+    damit der Effekt sichtbar wird.
 
-| SCSS                    | CSS                  |
-|-------------------------|----------------------|
-| `$font-weight-base`     | `var(--fw-base)`     |  
-| `$font-weight-light`    | `var(--fw-light)`    |  
-| `$font-weight-regular`  | `var(--fw-regular)`  |  
-| `$font-weight-medium`   | `var(--fw-medium)`   |  
-| `$font-weight-semibold` | `var(--fw-semibold)` |  
-| `$font-weight-bold`     | `var(--fw-bold)`     |  
+??? example "Verfügbare (S)CSS-Variablen"
+    
+    | SCSS                    | CSS                  |
+    |-------------------------|----------------------|
+    | `$font-weight-base`     | `var(--fw-base)`     |  
+    | `$font-weight-light`    | `var(--fw-light)`    |  
+    | `$font-weight-regular`  | `var(--fw-regular)`  |  
+    | `$font-weight-medium`   | `var(--fw-medium)`   |  
+    | `$font-weight-semibold` | `var(--fw-semibold)` |  
+    | `$font-weight-bold`     | `var(--fw-bold)`     |  
 
 ## Links
 
 Zusätzlich zur Typografie werden Link-Einstellungen für die Schriftstärke, Farben und die Verzierung bereitgestellt.
 Da Verlinkungen auch immer mit einer Aktion verbunden sind, gibt es **zusätzliche Einstellungen für das Hovern**.
 
-> Das CSS-Framework sieht derzeit 3 Designs vor, wobei sich diese nur in den Farben unterscheiden. Sofern eine
-> invertierte oder reguläre Textfarbe eingestellt ist, werden Links, welche nicht explizit mit einer Link-Farbe über den
-> StyleManager eingestellt wurden, in der jeweils passenden Version angezeigt.
+!!! info
+    Das CSS-Framework sieht derzeit 3 Designs vor, wobei sich diese nur in den Farben unterscheiden. Sofern eine 
+    invertierte oder reguläre Textfarbe eingestellt ist, werden Links, welche nicht explizit mit einer Link-Farbe über
+    den StyleManager eingestellt wurden, in der jeweils passenden Version angezeigt.
 
-### Link-Schriftstärke<sup>$link-font-weight</sup>
+### Link-Schriftstärke
+`$link-font-weight`
 
 Dient der Einstellung der Schriftstärke von allen `<a>`-Elementen.
 
-### Link-Farben<sup><span>$link-color-\*</span><span>$link-hover-color-\*</span></sup>
+### Link-Farben
+`$link-color-*` `$link-hover-color-*`
 
 Hiermit können die Link-Farben angepasst werden, welche über die Textfarbe (regulär, invertiert) und / oder über die
 Link-Farbe (regulär, invertiert, extra) über den Style-Manager eingestellt werden können.
 
-!> Eine über den Style-Manager eingestellte Link-Farbe überschreibt immer auch die Text-Farbe und setzt die Invertierung
-durch die eingestellte Text-Farbe außer Kraft.
+!!! info
+    Eine über den Style-Manager eingestellte Link-Farbe überschreibt immer auch die Text-Farbe und setzt die Invertierung
+    durch die eingestellte Text-Farbe außer Kraft.
 
-### Link-Verzierung<sup><span>$link-decoration-\*</span><span>$link-hover-decoration-\*</span></sup>
+### Link-Verzierung
+`$link-decoration-*` `$link-hover-decoration-*`
 
 Verzierungen (*text-decorations*) können verwendet werden, um Links optisch hervorzuheben. Derzeit stehen folgende
 Verzierungen zur Auswahl:
@@ -105,23 +125,22 @@ Verzierungen zur Auswahl:
 - <span style="text-decoration: dotted underline">dotted</span>
 - <span style="text-decoration: dashed underline">dashed</span>
 
-### Verfügbare Link-Typen
+??? info "Link-Typen"
+    
+    | Typ       | Beschreibung      |
+    |-----------|-------------------|
+    | `regular` | Regulärer Link    |  
+    | `invert`  | Invertierter Link |  
+    | `extra`   | Extra Link        |
 
-| Typ       | Beschreibung      |
-|-----------|-------------------|
-| `regular` | Regulärer Link    |  
-| `invert`  | Invertierter Link |  
-| `extra`   | Extra Link        |  
-
-### Verfügbare (S)CSS-Variablen
-
-Da sich Link-Eigenschaften abhängig der Text-Farbe verhalten, gibt es nur eine CSS-Custom-Property für alle Link-Farben.
-Hierdurch lassen sich Link-Farben im eigenen Skin hinzufügen.
-
-| SCSS                           | CSS                |
-|--------------------------------|--------------------|
-| `$link-color-[typ]`            | `var(--a-clr)`     |  
-| `$link-hover-color-[typ]`      | `var(--a-clr-hvr)` |  
-| `$link-decoration-[typ]`       | `var(--a-td)`      |  
-| `$link-hover-decoration-[typ]` | `var(--a-td-hvr)`  |
-
+??? example "Verfügbare (S)CSS-Variablen"
+    
+    Da sich Link-Eigenschaften abhängig der Text-Farbe verhalten, gibt es nur eine CSS-Custom-Property für alle Link-Farben.
+    Hierdurch lassen sich Link-Farben im eigenen Skin hinzufügen.
+    
+    | SCSS                           | CSS                |
+    |--------------------------------|--------------------|
+    | `$link-color-[typ]`            | `var(--a-clr)`     |  
+    | `$link-hover-color-[typ]`      | `var(--a-clr-hvr)` |  
+    | `$link-decoration-[typ]`       | `var(--a-td)`      |  
+    | `$link-hover-decoration-[typ]` | `var(--a-td-hvr)`  |
