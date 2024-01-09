@@ -25,6 +25,12 @@ nav:
                     - pages/docs/configuration/backgrounds.md
     - Anleitungen:
           - pages/guides/index.md
+          - Demo:
+              - Demo installieren:
+                  - pages/guides/demo/product-installer.md
+                  - pages/guides/demo/contao-manager-theme.md
+                  - pages/guides/demo/contao-manager-artefakt.md
+
 #    - Erweiterung:
 #          - pages/extensions/index.md
 
@@ -90,6 +96,7 @@ theme:
                 name: Switch to system preference
 
 plugins:
+    - glightbox
     - search:
           lang: de
 

@@ -6,12 +6,13 @@ title: Contao ThemeManager
 
 Willkommen zur Dokumentation des Contao ThemeManagers!
 
-Derzeit befindet sich die Dokumentation noch im Aufbau, aber wir arbeiten daran, sie so schnell wie möglich für dich
-bereitzustellen.
+!!! info
+    Derzeit befindet sich die Dokumentation noch im Aufbau, aber wir arbeiten daran, sie so schnell wie möglich für dich
+    bereitzustellen.
 
 ___
 
-## Verfügbare Artikel
+## Schnelleinstieg
 
 ### Systemanforderungen
 
@@ -19,7 +20,7 @@ Bevor du mit der Installation beginnst, stelle sicher, dass dein System den erfo
 Contao ThemeManager entspricht. Erfahre mehr über die notwendigen Voraussetzungen, um den Contao ThemeManager nutzen zu
 können.
 
-- [Zu den Systemanforderungen](installation/requirements.md)
+- [Zu den Systemanforderungen](/pages/docs/installation/system/)
 
 ### Download und Installation
 
@@ -43,7 +44,6 @@ kennenlernen kannst.
 
 - [ThemeManager Demo installieren](guides/step-by-step/demo.md)
 
-!> Wir arbeiten hart daran, die Dokumentation zu erweitern und weitere nützliche Informationen bereitzustellen. Bitte
-habe Verständnis dafür, dass einige Abschnitte möglicherweise noch nicht vollständig sind.
 
+<br/>
 Vielen Dank für dein Interesse am Contao ThemeManager!
