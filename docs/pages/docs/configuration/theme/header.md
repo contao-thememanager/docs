@@ -74,7 +74,8 @@ Sowohl in den Layout- als auch in den Seiten-Einstellungen befindet sich im Absc
 
 === "Undocked"
 
-    Auch mit dieser Option wird die Kopfzeile auf der Webseite fixiert. 
+    Auch mit dieser Option wird die Kopfzeile auf der Webseite fixiert, der erste Artikel wird jedoch 
+    **nicht überlagert**.
     !!! tip
         Diese Option wird empfohlen, wenn die Kopfzeile jederzeit sichtbar sein soll, der **Inhalt** der nachfolgenden 
         Layout-Bereiche aber **nicht verdeckt** werden soll.
