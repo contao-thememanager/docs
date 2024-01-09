@@ -6,7 +6,7 @@ In den Grundlegenden Einstellungen sind Optionen für die **Schriftgröße des R
 **Hintergrundfarbe des Body-Elements** (`$body-bg`) und den **Border-Radius** (`$border-radius`) vorhanden.
 
 !!! info "$browser-context"
-    Diese Varuavke beeinflusst die Berechnung der im Framework enthaltenen Funktionen zur Größenanpassung, sodass die 
+    Diese Variable beeinflusst die Berechnung der im Framework enthaltenen Funktionen zur Größenanpassung, sodass die 
     Umwandlung von px zu rem immer im Kontext der Schriftgröße des Root-Elements erfolgt.
 
 !!! info "$border-radius"

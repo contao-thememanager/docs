@@ -7,7 +7,7 @@ erklärt.
 Beginne damit, in die Dateiverwaltung *(System/Dateiverwaltung)* von Contao zu navigieren und erstelle einen Ordner, in
 dem die Theme-Dateien deines erstellten Themes kompiliert werden sollen.
 
-![Ordner erstellen](/assets/setup/2_folder_2.png)
+![Ordner erstellen](../../../assets/setup/2_folder_2.png)
 Stelle sicher, dass dieser Ordner öffentlich erreichbar ist.
 
 ## Theme erstellen / einstellen
@@ -17,13 +17,13 @@ eine neue Palette **Theme-Compiler** erweitert wurde.
 !!! info 
     Schau dir die offizielle [Contao-Dokumentation](https://docs.contao.org/manual/de/layout/theme-manager/themes-verwalten/) an, um zu erfahren, wie ein Theme in Contao eingerichtet wird.
 
-![Ordner im Theme einstellen](/assets/setup/3_theme_3.png)
+![Ordner im Theme einstellen](../../../assets/setup/3_theme_3.png)
 Wähle den zuvor erstellten Ordner aus, in welchen die CSS-Dateien kompiliert werden sollen. Nach der Auswahl des
 Ordners kannst du durch <span class="btn-preview">**Speichern und kompilieren**</span> die initialen Stylesheets
 generieren.
 
 ### Compiler-Report
-![Compiler Report](/assets/setup/3_theme_6.png)
+![Compiler Report](../../../assets/setup/3_theme_6.png)
 Nach erfolgreichem Abschluss wirst du zum Compiler-Report weitergeleitet. Hier werden drei Dateien erstellt:
 
 | Datei           | Funktion                                                                                                                                 |
@@ -59,7 +59,7 @@ Layoutbereiche (Hauptspalte, Linke Spalte, Rechte Spalte).
 
 Im nachfolgenden Beispiel nennen wir es **Default**.
 
-![Layout für volle Breite erstellen](/assets/setup/4_layout_3.png)
+![Layout für volle Breite erstellen](../../../assets/setup/4_layout_3.png)
 Bei der Erstellung eines neuen Layouts werden bereits folgende Einstellungen durch den ThemeManager vorgenommen:
 
 - Zeilen *(Kopfzeile, Hauptzeile und Fußzeile)*
@@ -71,7 +71,7 @@ Bei der Erstellung eines neuen Layouts werden bereits folgende Einstellungen dur
 
 Du musst lediglich die im vorherigen Schritt generierten Stylesheets einbinden.
 
-![CSS-Dateien im Layout einbinden](/assets/setup/4_layout_5.png)
+![CSS-Dateien im Layout einbinden](../../../assets/setup/4_layout_5.png)
 Binde nun unter **Externe Stylesheets** deine durch den [Compiler](#compiler-report) erstellten Stylesheets in folgender
 Reihenfolge ein:
 
@@ -93,7 +93,7 @@ kannst du die folgenden Schritte befolgen.
 
 Im nachfolgenden Beispiel nennen wir dieses Layout **Content**.
 
-![Default-Layout duplizieren](/assets/setup/4_layout_7.png)
+![Default-Layout duplizieren](../../../assets/setup/4_layout_7.png)
 Dupliziere das zuvor erstellte [Layout](#layout-für-volle-breite) und passe die gewünschte Anzahl der Spalten an.
 
 #### Layout-Columns
@@ -103,7 +103,7 @@ Dupliziere das zuvor erstellte [Layout](#layout-für-volle-breite) und passe die
 | 1 Column       | Richtet die Hauptspalte und ***eine*** linke oder rechte Spalte korrekt aus (eine Spalte)                    |
 | 2 Columns      | Richtet die Hauptspalte und ***eine*** linke und rechte Spalte korrekt aus (zwei Spalten)                    |
 
-![Content-Layout einstellen](/assets/setup/4_layout_8.png)
+![Content-Layout einstellen](../../../assets/setup/4_layout_8.png)
 In diesem Beispiel haben wir die Layoutbereiche **Hauptspalte** und **Reche Spalte** hinzugefügt, sodass diese jetzt
 **zwischen** den Layoutbereichen **Hauptspalte Oben** und **Hauptspalte Unten** eingebunden werden müssen.
 
@@ -117,14 +117,14 @@ Das CSS-Framework des Contao ThemeManagers kann an die eigenen Bedürfnisse ange
 Dies umfasst beispielsweise Farben, Typografie, Überschriften, Formulare, Buttons, Tabellen, Layout-Einstellungen, das
 Grid, die Breakpoint-Einstellungen und vieles mehr.
 
-![Theme-Konfiguration](/assets/setup/3_theme_4.png)
+![Theme-Konfiguration](../../../assets/setup/3_theme_4.png)
 Die Theme-Konfiguration lässt sich nun über die Theme-Übersicht mithilfe des
-<img width="22" src="/assets/logo.svg" data-no-zoom> **Theme konfigurieren**-Buttons aufrufen.
+<img width="22" src="../../../assets/logo.svg" data-no-zoom> **Theme konfigurieren**-Buttons aufrufen.
 
-![Beispiel der Theme-Konfiguration](/assets/setup/5_config_1.png)
+![Beispiel der Theme-Konfiguration](../../../assets/setup/5_config_1.png)
 *Änderung der primären Farbe*
 
-![Speichern und Kompilieren des Themes](/assets/setup/3_theme_5.png)
+![Speichern und Kompilieren des Themes](../../../assets/setup/3_theme_5.png)
 *Speichern und Kompilieren des Themes.*
 
 ___

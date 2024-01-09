@@ -10,6 +10,7 @@ nav:
                     - pages/docs/installation/setup.md
             - Konfiguration:
                     - Theme:
+                          - pages/docs/configuration/theme/overview.md
                           - pages/docs/configuration/theme/global.md
                           - pages/docs/configuration/theme/fonts.md
                           - pages/docs/configuration/theme/headings.md
