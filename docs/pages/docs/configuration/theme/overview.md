@@ -6,6 +6,7 @@ Innerhalb der Theme-Konfiguration können sämtliche Variablen des CTM-Framework
 Erscheinungsbild jeder Webseite nach Bedarf anzupassen.
 
 !!! info
+
     Jeder Bezeichner einer einzustellenden Variable entspricht der jeweiligen
     [SCSS-Variable](https://sass-lang.com/guide/#variables), wodurch der Wert im [Skin](../skin.md)
     abgerufen werden kann.
