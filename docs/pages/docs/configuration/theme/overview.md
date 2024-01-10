@@ -1,3 +1,7 @@
+---
+icon: octicons/list-unordered-24
+---
+
 # Übersicht
 
 ## Variablen des Frameworks
@@ -38,7 +42,7 @@ Theme-Konfiguration mit der im Contao-Backend übereinstimmt.
 
     Hier erfolgt die Konfiguration von Schriftgrößen, Farben und weiteren Optionen für Überschriften (*h1* - *h6*).
 
--   :material-button-pointer: __[Buttons](buttons.md)__
+-   :material-button-cursor: __[Buttons](buttons.md)__
 
     ---
 

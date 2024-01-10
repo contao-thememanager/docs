@@ -1,3 +1,7 @@
+---
+icon: octicons/globe-24
+---
+
 # Global
 
 ## Basis-Einstellungen

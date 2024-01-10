@@ -1,3 +1,7 @@
+---
+icon: octicons/table-24
+---
+
 # Komponenten
 
 ## Box

@@ -1,3 +1,7 @@
+---
+icon: material/navigation-variant-outline
+---
+
 # Module
 
 Im Abschnitt Module können derzeit einige von Contao mitgelieferten Navigationen modifiziert werden.

@@ -1,3 +1,7 @@
 :root {
 
 }
+
+.md-grid {
+    max-width: 63rem;
+}

@@ -1,3 +1,7 @@
+---
+icon: octicons/typography-24
+---
+
 # Schriften
 
 ## Typografie

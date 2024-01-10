@@ -1,3 +1,7 @@
+---
+icon: octicons/heading-24
+---
+
 # Überschriften
 
 !!! info
