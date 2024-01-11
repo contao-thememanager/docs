@@ -65,8 +65,8 @@ Nach Kompilieren des Themes stehen die neuen Icons in den Komponenten bereit.
 
 !!! danger "Ändern der Icon-Schriftart in der Theme-Konfiguration"
 
-    Sofern die Icon-Font-Family unter [IcoMoon](theme/components.md#icon) verändert wurde `(Default: 'ctm-icon')`,
-    können die durch den ThemeManager generierten Icons nicht korrekt angezeigt werden.
+    Sofern die Icon-Font-Family in den [Icon-Einstellungen](theme/components.md#icon) verändert wurde
+    `(Default: 'ctm-icon')`, können die durch den ThemeManager generierten Icons nicht korrekt angezeigt werden.
 
 ### Hinweise und Fehlermeldungen
 
