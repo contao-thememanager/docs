@@ -44,6 +44,5 @@ supportet.
 | [oveleon/contao-theme-compiler-bundle](https://packagist.org/packages/oveleon/contao-theme-compiler-bundle)                 |           ^1.7 |
 | [oveleon/contao-config-driver-bundle](https://packagist.org/packages/oveleon/contao-config-driver-bundle)                   |         ^1.3.1 |
 | [madeyourday/contao-rocksolid-custom-elements](https://packagist.org/packages/madeyourday/contao-rocksolid-custom-elements) |           ^2.4 |
-| [madeyourday/contao-rocksolid-icon-picker](https://packagist.org/packages/madeyourday/contao-rocksolid-icon-picker)         |           ^2.1 |
+| [madeyourday/contao-rocksolid-icon-picker](https://packagist.org/packages/madeyourday/contao-rocksolid-icon-picker)         |         ^2.1.2 |
 | [symfony/filesystem](https://packagist.org/packages/symfony/filesystem)                                                     | ^5.4 oder ^6.0 |
-
