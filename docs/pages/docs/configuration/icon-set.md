@@ -70,8 +70,7 @@ Nach Kompilieren des Themes stehen die neuen Icons in den Komponenten bereit.
 
 ### Hinweise und Fehlermeldungen
 
-![Hinweise und Fehlermeldungen im Asset-Compiler](../../../assets/configuration/icons/maintenance-no-icon-font-woff-file.png){
-loading=lazy }
+![Hinweise und Fehlermeldungen im Asset-Compiler](../../../assets/configuration/icons/maintenance-no-icon-font-woff-file.png){ loading=lazy }
 
 Folgende Hinweise und Fehlermeldungen können vom Asset-Compiler zurückgegeben werden:
 
