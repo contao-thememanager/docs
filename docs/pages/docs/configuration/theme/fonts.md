@@ -56,7 +56,7 @@ Beeinflusst die Schriftgröße für normale Texte einer Webseite und kann in `px
 
 `$line-height-base`
 
-Dient der Einstellung der vertikalen Zeilenhöhe von Schriften
+Dient der Einstellung der vertikalen Zeilenhöhe von Schriften.
 
 ??? example "Verfügbare (S)CSS-Variablen"
 
