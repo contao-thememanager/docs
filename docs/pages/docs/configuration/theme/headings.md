@@ -337,7 +337,7 @@ Werden sowohl das normale Spacing, als auch das `Global Spacing` ausgewählt, ge
     - $headline-spacing-`[Option]`-medium
     - $headline-spacing-`[Option]`-large
 
-sodass es hier 3*3 Möglichkeiten **über jeden [Breakpoint](layout.md#breakpoints) gibt, welche der nachfolgenden Tabelle
+sodass es hier 3*3 Möglichkeiten **über jeden** [Breakpoint](layout.md#breakpoints) gibt, welche der nachfolgenden Tabelle
 entnommen werden können:
 
 |                         | Small (Spacing)            | Medium (Spacing)             | Large (Spacing)              |
@@ -348,5 +348,6 @@ entnommen werden können:
 
 !!! warning "Kombination überschreibt jegliche Global-Spacing-Abstände"
 
-    Bei Auswahl beider Optionen werden alle Global-Spacing-Abstände überschrieben, sodass die eingestellte Option
-    zwangsläufig für weitere Breakpoints eingestellt werden muss.
+    Bei Auswahl beider Optionen im ersten Breakpoint werden alle Global-Spacing-Abstände überschrieben, sodass die
+    eingestellte Option zwangsläufig für weitere Breakpoints eingestellt werden muss. Empfohlen wird die Kombination bei
+    anfangender Zwei- bzw. Dreispaltigkeit.
