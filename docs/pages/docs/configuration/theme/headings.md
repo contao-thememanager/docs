@@ -221,3 +221,26 @@ wobei folgende Einstellungen möglich sind:
 ## Abstände von Überschriften
 
 `$headline-spacing` `$headline-spacing-*`
+
+Wie bereits in [Schriftgrößen](#schriftgrößen) erklärt, passt sich diese anhand der [Breakpoints](layout.md#breakpoints)
+an.
+
+!!! info
+
+    Im Standard haben Überschriften einen Abstand von `1rem` nach unten.
+
+Wenn die Schriftgröße für Überschriften deutlich zunimmt, kann der Abstand unnatürlich aussehen, sodass dieser visuelle
+Abstand zwecks Komposition oft angepasst wird.
+
+Das CSS-Framework liefert hierbei mehrere Abstände für 3 Größen (Mobil, Tablet und Desktop), welche individuell für
+jeden Breakpoint über den StyleManager eingestellt werden können.
+
+Über die StyleManager-Option Global Spacing (activates the Responsive behaviour), wächst die Größe automatisch, sodass
+dies oft die einzig notwendige Einstellung ist. Die nachfolgende Tabelle zweigt an, welche der Config-Variablen genutzt
+wird.
+
+| Breakpoints                              | Small | Medium | Large |
+|------------------------------------------|------:|--------|-------|
+| kleiner **`s`** ` < 767.98px`            |       |        |       |
+| **`s`** bis  **`l`** `768px - 1263.98px` |       |        |       |
+| ab **`l`**  `1264px`                     |       |        |       | 
