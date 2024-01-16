@@ -230,17 +230,123 @@ an.
     Im Standard haben Überschriften einen Abstand von `1rem` nach unten.
 
 Wenn die Schriftgröße für Überschriften deutlich zunimmt, kann der Abstand unnatürlich aussehen, sodass dieser visuelle
-Abstand zwecks Komposition oft angepasst wird.
+Abstand oft angepasst wird.
 
 Das CSS-Framework liefert hierbei mehrere Abstände für 3 Größen (Mobil, Tablet und Desktop), welche individuell für
 jeden Breakpoint über den StyleManager eingestellt werden können.
 
+In den nachfolgenden Abschnitten werden die nachfolgenden Einstellungen beschrieben, welche sich verschieden auswirken.
+
+!!! tip "Welche Einstellung soll ich nutzen?"
+
+    Oft hat es sich ergeben, dass die Einstellung des [Globalen Headline-Spacing](#global-spacing-automatisch)
+    ausreichend für die eigene Website ist, sofern der Abstand je Breakpoint wachsen soll.
+
+### Spacing (Normal)
+
+Wenn das [Global Spacing](#global-spacing-automatisch) nicht aktiviert wird, gelten folgende Regeln für den unteren
+Abstand (*Margin*) für Überschriften:
+
+![Headline Spacing normal](../../../../assets/configuration/headline/headline-spacing.png){ loading=lazy }
+
+| Breakpoints           | Small                      | Medium                       | Large                        |
+|-----------------------|----------------------------|------------------------------|------------------------------|
+| Über jeden Breakpoint | `$headline-spacing-medium` | `$headline-spacing-s-medium` | `$headline-spacing-l-medium` |
+
+??? example "Verfügbare (S)CSS-Variablen"
+
+    Durch die Verwendung von Custom-Properties wird grundsätzlich nur die in `.hl-mb-*` gesetzte Variable `--hl-mb`
+    überschrieben.
+
+    <div class="grid" markdown>
+    ```scss title="SCSS"
+    $headline-spacing-medium
+    $headline-spacing-s-medium
+    $headline-spacing-l-medium
+    ```
+    ```css title="CSS"
+    var(--hl-mb-2)
+    var(--hl-mb-s-2)
+    var(--hl-mb-l-2)
+    ```
+    </div>
+
+### Global Spacing (Automatisch)
+
 Über die StyleManager-Option Global Spacing (activates the Responsive behaviour), wächst die Größe automatisch, sodass
-dies oft die einzig notwendige Einstellung ist. Die nachfolgende Tabelle zweigt an, welche der Config-Variablen genutzt
+dies oft die einzig notwendige Einstellung ist. Die nachfolgende Tabelle zeigt an, welche der Config-Variablen genutzt
 wird.
 
-| Breakpoints                              | Small | Medium | Large |
-|------------------------------------------|------:|--------|-------|
-| kleiner **`s`** ` < 767.98px`            |       |        |       |
-| **`s`** bis  **`l`** `768px - 1263.98px` |       |        |       |
-| ab **`l`**  `1264px`                     |       |        |       | 
+![Headline Spacing global](../../../../assets/configuration/headline/headline-spacing-global.png){ loading=lazy }
+
+| Breakpoints                              | Small                       | Medium                       | Large                        |
+|------------------------------------------|-----------------------------|------------------------------|------------------------------|
+| kleiner **`s`** ` < 767.98px`            | `$headline-spacing-small`   | `$headline-spacing-medium`   | `$headline-spacing-large`    |
+| **`s`** bis  **`l`** `768px - 1263.98px` | `$headline-spacing-s-small` | `$headline-spacing-s-medium` | `$headline-spacing-s-medium` |
+| ab **`l`**  `1264px`                     | `$headline-spacing-l-small` | `$headline-spacing-l-medium` | `$headline-spacing-l-large`  | 
+
+??? example "Verfügbare (S)CSS-Variablen"
+
+    Durch die Verwendung von Custom-Properties wird grundsätzlich nur die in `.hl-mb-*` gesetzte Variable `--hl-mb`
+    überschrieben.
+
+    <div class="grid" markdown>
+    ```scss title="SCSS"
+    $headline-spacing
+
+    $headline-spacing-small
+    $headline-spacing-s-small
+    $headline-spacing-l-small
+
+    $headline-spacing-medium
+    $headline-spacing-s-medium
+    $headline-spacing-l-medium
+
+    $headline-spacing-large
+    $headline-spacing-s-large
+    $headline-spacing-l-large
+    ```
+    ```css title="CSS"
+    var(--hl-mb, 1rem) /* Wird überschrieben*/
+
+    var(--hl-mb-1)
+    var(--hl-mb-s-1)
+    var(--hl-mb-l-1)
+
+    var(--hl-mb-2)
+    var(--hl-mb-s-2)
+    var(--hl-mb-l-2)
+
+    var(--hl-mb-3)
+    var(--hl-mb-s-3)
+    var(--hl-mb-l-3)
+    ```
+    </div>
+
+### Kombination
+
+Werden sowohl das normale Spacing, als auch das `Global Spacing` ausgewählt, gelten die Option
+
+- des normalen Spacings für das Suffix der SCSS-Variable:
+    - $headline-spacing-`[Option]`
+    - $headline-spacing-s-`[Option]`
+    - $headline-spacing-l-`[Option]`
+
+- des globalen Spacings für das Infix der SCSS-Variable
+    - $headline-spacing-`[Option]`-small
+    - $headline-spacing-`[Option]`-medium
+    - $headline-spacing-`[Option]`-large
+
+sodass es hier 3*3 Möglichkeiten **über jeden [Breakpoint](layout.md#breakpoints) gibt, welche der nachfolgenden Tabelle
+entnommen werden können:
+
+|                         | Small (Spacing)            | Medium (Spacing)             | Large (Spacing)              |
+|------------------------:|----------------------------|------------------------------|------------------------------|
+|  Small (Global Spacing) | `$headline-spacing-small`  | `$headline-spacing-s-small`  | `$headline-spacing-l-small`  |
+| Medium (Global Spacing) | `$headline-spacing-medium` | `$headline-spacing-s-medium` | `$headline-spacing-l-medium` |
+|  Large (Global Spacing) | `$headline-spacing-large`  | `$headline-spacing-s-large`  | `$headline-spacing-l-large`  |
+
+!!! warning "Kombination überschreibt jegliche Global-Spacing-Abstände"
+
+    Bei Auswahl beider Optionen werden alle Global-Spacing-Abstände überschrieben, sodass die eingestellte Option
+    zwangsläufig für weitere Breakpoints eingestellt werden muss.
