@@ -1,9 +1,11 @@
 # Ersteinrichtung
+
 Der Contao ThemeManager bedient sich einer Vielzahl von Werkzeugen, sodass vor der eigentlichen Nutzung des Frameworks
 einige Schritte notwendig sind. Im Folgenden wird die Ersteinrichtung des Contao ThemeManagers Schritt für Schritt
 erklärt.
 
 ## Ordner erstellen
+
 Beginne damit, in die Dateiverwaltung *(System/Dateiverwaltung)* von Contao zu navigieren und erstelle einen Ordner, in
 dem die Theme-Dateien deines erstellten Themes kompiliert werden sollen.
 
@@ -11,10 +13,12 @@ dem die Theme-Dateien deines erstellten Themes kompiliert werden sollen.
 Stelle sicher, dass dieser Ordner öffentlich erreichbar ist.
 
 ## Theme erstellen / einstellen
+
 Im nächsten Schritt legst du ein neues Theme *(Layout/Themes)* an. Du wirst feststellen, dass die Theme-Bearbeitung um
 eine neue Palette **Theme-Compiler** erweitert wurde.
 
-!!! info 
+!!! info
+
     Schau dir die offizielle [Contao-Dokumentation](https://docs.contao.org/manual/de/layout/theme-manager/themes-verwalten/) an, um zu erfahren, wie ein Theme in Contao eingerichtet wird.
 
 ![Ordner im Theme einstellen](../../../assets/setup/3_theme_3.png)
@@ -23,6 +27,7 @@ Ordners kannst du durch <span class="btn-preview">**Speichern und kompilieren**<
 generieren.
 
 ### Compiler-Report
+
 ![Compiler Report](../../../assets/setup/3_theme_6.png)
 Nach erfolgreichem Abschluss wirst du zum Compiler-Report weitergeleitet. Hier werden drei Dateien erstellt:
 
@@ -33,20 +38,22 @@ Nach erfolgreichem Abschluss wirst du zum Compiler-Report weitergeleitet. Hier w
 | _theme.css      | Enthält das [anpassbare Framework](../configuration/theme/overview.md) des Contao ThemeManagers.                                               |
 
 ## Layout(s) erstellen
+
 In diesem Abschnitt geht es um die Anpassung der Layouts, die für eine optimale Nutzung des ThemeManagers erforderlich
 sind. Das Contao ThemeManager Framework benötigt zwei neue Layoutbereiche, die standardmäßig bei der Layouterstellung
 eingestellt werden:
 
-| Eigener Layoutbereich | ID          | Position                | Funktion                                                                                  |
-|-----------------------|-------------|-------------------------|-------------------------------------------------------------------------------------------|
-| Hauptspalte Oben      | main-above  | Unterhalb der Kopfzeile | Dient der Einbindung von bspw. Hero-Artikeln oberhalb des Inhalts-Bereiches.              |
-| Hauptspalte Unten     | main-below  | Oberhalb der Fußzeile   | Dient der Einbindung von Artikeln, welche über die gesamte Bildschirmbreite gehen sollen. |                                               
+| Eigener Layoutbereich | ID         | Position                | Funktion                                                                                  |
+|-----------------------|------------|-------------------------|-------------------------------------------------------------------------------------------|
+| Hauptspalte Oben      | main-above | Unterhalb der Kopfzeile | Dient der Einbindung von bspw. Hero-Artikeln oberhalb des Inhalts-Bereiches.              |
+| Hauptspalte Unten     | main-below | Oberhalb der Fußzeile   | Dient der Einbindung von Artikeln, welche über die gesamte Bildschirmbreite gehen sollen. |                                               
 
-!!! info 
-    Weitere Informationen zu Layouts findest du in der offiziellen [Contao-Dokumentation](https://docs.contao.org/manual/de/layout/theme-manager/seitenlayouts-verwalten/).
+!!! info
+Weitere Informationen zu Layouts findest du in der
+offiziellen [Contao-Dokumentation](https://docs.contao.org/manual/de/layout/theme-manager/seitenlayouts-verwalten/).
 
-Mit Hilfe des ThemeManager Frameworks benötigen wir nicht mehr für jeden Zweck ein eigenes Layout.
-Wir empfehlen die Erstellung der folgenden zwei Layouts.
+Mithilfe des ThemeManager Frameworks benötigen wir nicht mehr für jeden Zweck ein eigenes Layout. Wir empfehlen die
+Erstellung der folgenden zwei Layouts.
 
 | Layout                                   | Beschreibung                                                      |
 |------------------------------------------|-------------------------------------------------------------------|
@@ -54,6 +61,7 @@ Wir empfehlen die Erstellung der folgenden zwei Layouts.
 | [Inhaltslayout](#inhaltslayout)          | Beinhaltet zusätzlich Artikel mit linker/rechter und Hauptspalte. |
 
 ### Layout für volle Breite
+
 Dieses Layout dient der Einbindung von Artikeln mit voller Breite und ignoriert die in Contao integrierten
 Layoutbereiche (Hauptspalte, Linke Spalte, Rechte Spalte).
 
@@ -80,12 +88,15 @@ Reihenfolge ein:
 3. _background.css[^2]
 
 ### Inhaltslayout
+
 Dieses Layout bedient sich zusätzlich der in Contao integrierten Layoutbereiche:
+
 - Hauptspalte
 - Linke Spalte
 - Rechte Spalte
 
 !!! info
+
     Die in der [Theme-Konfiguration](../configuration/theme/global.md) zu findende Palette **Überschriften (Inhaltsbereich)** dient lediglich diesem Layout.
 
 Um sicherzustellen, dass Artikel sowohl ober- als auch unterhalb des Hauptspaltenbereichs angezeigt werden können,
@@ -97,6 +108,7 @@ Im nachfolgenden Beispiel nennen wir dieses Layout **Content**.
 Dupliziere das zuvor erstellte [Layout](#layout-für-volle-breite) und passe die gewünschte Anzahl der Spalten an.
 
 #### Layout-Columns
+
 | Layout Columns | Funktion                                                                                                     |
 |----------------|--------------------------------------------------------------------------------------------------------------|
 | No Column      | Blendet den verantwortlichen Bereich ein, der für Hauptspalte, Linke Spalte und Rechte Spalte verwendet wird |
@@ -110,9 +122,12 @@ In diesem Beispiel haben wir die Layoutbereiche **Hauptspalte** und **Reche Spal
 Die StyleManager-Einstellung der [Layout-Columns](#layout-columns) hängt dabei von der genutzten Anzahl der Spalten ab.
 
 !!! info
-    Der horizontale und vertikale Abstand dieser Layoutbereiche lassen sich über das Article-Spacing im Layout einstellen.
+
+    Der horizontale und vertikale Abstand dieser Layoutbereiche lassen sich über das Article-Spacing im Layout 
+    einstellen.
 
 ## Theme-Konfiguration
+
 Das CSS-Framework des Contao ThemeManagers kann an die eigenen Bedürfnisse angepasst werden.
 Dies umfasst beispielsweise Farben, Typografie, Überschriften, Formulare, Buttons, Tabellen, Layout-Einstellungen, das
 Grid, die Breakpoint-Einstellungen und vieles mehr.
@@ -129,18 +144,18 @@ Die Theme-Konfiguration lässt sich nun über die Theme-Übersicht mithilfe des
 
 ___
 
-Im nächsten Abschnitt [Theme konfigurieren](../configuration/theme/overview.md) erfährst du im Detail, welche Optionen in der
+Im nächsten Abschnitt [Theme konfigurieren](../configuration/theme/overview.md) erfährst du im Detail, welche Optionen
+in der
 Theme-Konfiguration verfügbar sind und wie sie das Aussehen und Verhalten deines Themes beeinflussen.
 
 [^1]:
-Diese Reihenfolge dient lediglich der Best-Practice des Ladens von Stylesheet-Dateien beim Erstaufruf einer
-Website. Da sich innerhalb der ***_theme.css*** das Layout, Grid, Theme-Variablen und Default-Styles befinden, sollte
-diese Datei an erster Stelle eingebunden werden. In bestimmten Ausnahmen wie z.B.
+Diese Reihenfolge dient lediglich der Best-Practice des Ladens von Stylesheet-Dateien beim Erstaufruf einer Website. Da
+sich innerhalb der ***_theme.css*** das Layout, Grid, Theme-Variablen und Default-Styles befinden, sollte diese Datei an
+erster Stelle eingebunden werden. In bestimmten Ausnahmen wie z.B.
 [FOUC](https://de.wikipedia.org/wiki/Flash_of_Unstyled_Content) oder
 [Above-The-Fold-CSS](https://web.dev/articles/extract-critical-css?hl=de), können kritische CSS-Dateien vor der
 ***_theme.css*** eingebunden werden.
 
 [^2]:
-Es empfiehlt sich die _background.css in der Reihenfolge immer als
-letzte Stylesheet-Datei einzubinden, damit das Überschreiben dieser über einen eigenen [Skin](../configuration/skin.md)
-einfacher ist.
+Es empfiehlt sich die _background.css in der Reihenfolge immer als letzte Stylesheet-Datei einzubinden, damit das
+Überschreiben dieser über einen eigenen [Skin](../configuration/skin.md) einfacher ist.

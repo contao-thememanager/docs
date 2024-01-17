@@ -46,15 +46,15 @@ Diese Einstellung beeinflusst die Hintergrundfarbe (`background-color`) der Kach
 
 **Components**
 
-    ```css
-    .box > .inside
-    ```
+```css
+.box > .inside
+```
 
 **Elements**
 
-    ```css
-    .box-list .item > .inside
-    ```
+```css
+.box-list .item > .inside
+```
 
 Der Standardwert ist hier die Hintergrundfarbe des `<body>` sofern nicht anders konfiguriert.
 
@@ -253,7 +253,7 @@ Bestandteile einer Tabelle einstellen:
 Bis auf die Icon-Schriftart bezieht sich die nachfolgende Konfiguration auf das Aussehen der durch den ThemeManager
 bereitgestellten Inhaltselemente `Icon`, `Icon-Text` und `Icon-Text-Liste`.
 
-![Icon-Einstellungen](../../../../assets/configuration/components/icon-settings-stylemanager.png){ loading=lazy }
+![Icon-Einstellungen](../../../../assets/configuration/components/icon-settings-stylemanager.png){loading=lazy}
 
 ### Icon-Schriftart
 
@@ -290,7 +290,7 @@ wird.
 `$icon-outlined-width`
 
 Über die Optionen `Design` sowie `Shape` kann das Aussehen von Icons modifiziert werden.
-![Icon-Designs](../../../../assets/configuration/components/icons.png){ loading=lazy }
+![Icon-Designs](../../../../assets/configuration/components/icons.png){loading=lazy}
 Die Auswahl des Designs `Outline` in den zuvor beschriebenen Einstellungen bewirkt das Hinzufügen eines Rahmens um das
 Icon. Die Breite des Rahmens kann über `$icon-outlined-width` eingestellt werden.
 
