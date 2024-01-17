@@ -218,6 +218,8 @@ wobei folgende Einstellungen möglich sind:
 | `lowercase`  | <span style="text-transform: lowercase">Die Textdarstellung dient der Hervorhebung von Text.</span>  | Jeder Buchstabe wird in Großbuchstaben umgewandelt.  |
 | `capitalize` | <span style="text-transform: capitalize">Die Textdarstellung dient der Hervorhebung von Text.</span> | Jedes Wort beginnt mit einem Großbuchstaben.         |
 
+---
+
 ## Abstände von Überschriften
 
 `$headline-spacing` `$headline-spacing-*`
@@ -337,8 +339,8 @@ Werden sowohl das normale Spacing, als auch das `Global Spacing` ausgewählt, ge
     - $headline-spacing-`[Option]`-medium
     - $headline-spacing-`[Option]`-large
 
-sodass es hier 3*3 Möglichkeiten **über jeden** [Breakpoint](layout.md#breakpoints) gibt, welche der nachfolgenden Tabelle
-entnommen werden können:
+sodass es hier 3*3 Möglichkeiten **über jeden** [Breakpoint](layout.md#breakpoints) gibt, welche der nachfolgenden
+Tabelle entnommen werden können:
 
 |                         | Small (Spacing)            | Medium (Spacing)             | Large (Spacing)              |
 |------------------------:|----------------------------|------------------------------|------------------------------|

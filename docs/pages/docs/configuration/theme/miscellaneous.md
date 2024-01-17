@@ -12,7 +12,7 @@ Unter *Sonstiges* fällt jede Einstellung, welche so speziell ist, dass sie kein
 
 <div class="grid cards" style="margin:5px;box-shadow: 0 0 5px 5px var(--md-primary-fg-color)" markdown>
 
-- __$box-shadow__
+- **$box-shadow**
 
     ---
 
@@ -68,7 +68,7 @@ wenn <span style="background: var(--md-primary-fg-color); color: #FFF">Text auf 
 
 `$aspect-ratios`
 
-!!! abstract
+!!! abstract "Dynamische Variable"
 
     Hierbei handelt es sich um eine dynamische Veriable, welche verschiedene Seitenverhältnisse in den 
     **Bild-Einstellungen** (`Image -> Aspect-Ratio`) bereitstellt.

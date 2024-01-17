@@ -65,7 +65,6 @@ Sowohl Schriftgröße als auch Padding werden über die `Size`-Option gesetzt.
     $button-font-size-medium
     $button-font-size-large
     $button-font-size-super
-
     ```
     ```css title="CSS"
     /** Padding */
@@ -75,6 +74,8 @@ Sowohl Schriftgröße als auch Padding werden über die `Size`-Option gesetzt.
     var(--btn-p-4)
     ```
     </div>
+
+---
 
 ## Button-Design
 

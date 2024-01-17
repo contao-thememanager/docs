@@ -15,6 +15,8 @@ Erscheinungsbild jeder Webseite nach Bedarf anzupassen.
     [SCSS-Variable](https://sass-lang.com/guide/#variables), wodurch der Wert im [Skin](../skin.md)
     abgerufen werden kann.
 
+---
+
 ## Konfigurationsstruktur
 
 In Version 2.0 des Contao ThemeManagers wurde die Konfiguration angepasst, sodass die hier dokumentierte Reihenfolge der

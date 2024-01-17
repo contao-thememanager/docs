@@ -27,6 +27,8 @@ In den grundlegenden Einstellungen sind Optionen für die **Schriftgröße des R
     ```
     </div>
 
+---
+
 ## Farben
 
 Über die Theme-Konfiguration lassen sich die nachfolgenden 4 Farben einstellen, welche innerhalb der Konfiguration für

@@ -129,6 +129,8 @@ festgelegt werden. Restliche Schriftstärken werden lediglich in der Konfigurati
     ```
     </div>
 
+---
+
 ## Links
 
 Zusätzlich zur Typografie werden Link-Einstellungen für die Schriftstärke, Farben und die Verzierung bereitgestellt.

@@ -29,8 +29,8 @@ Website, sofern diese in den [Layout-Bereichen](../../installation/setup.md#layo
 
 `$header-height` `$header-height-*`
 
-Über die nachfolgenden Einstellungen lässt sich die Höhe der Kopfzeile über die verschiedenen *
-*[Breakpoints](layout.md#breakpoints)** einstellen, sodass die Höhe auf verschiedenen Geräten variieren kann.
+Über die nachfolgenden Einstellungen lässt sich die Höhe der Kopfzeile über die verschiedenen
+**[Breakpoints](layout.md#breakpoints)** einstellen, sodass die Höhe auf verschiedenen Geräten variieren kann.
 
 !!! info "Größe der CSS-Datei"
 
