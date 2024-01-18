@@ -75,10 +75,10 @@ Der Standardwert ist hier die Hintergrundfarbe des `<body>` sofern nicht anders 
     $boxed-background-color
     ```
     ```css title="CSS"
-    // Components (.box)
+    /* Components (.box) */
     var(--b-bg)
 
-    // Elements (.box-list)
+    /* Elements (.box-list) */
     var(--i-bg)
     ```
     </div>
@@ -156,7 +156,6 @@ Folgende Einstellungen können hierbei vorgenommen werden:
     $divider-style
     $divider-color
     ```
-
     ```css title="Klassen"
     .line-top /* Top -> Full */
     .line-btm /* Bottom -> Full */

@@ -175,9 +175,8 @@ eingestellt werden müssen, damit der Effekt sichtbar ist (Im Beispiel werden nu
 
 ??? example "Verfügbare SCSS-Variablen"
 
-    <div class="grid" markdown>
+    <div markdown>
     ```scss title="SCSS"
-    /** Reguläre Farben */
     $h1-font-weight
     $h2-font-weight
     $h3-font-weight

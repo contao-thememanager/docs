@@ -36,8 +36,8 @@ Folgende Dateien müssen in *einen Ordner* abgelegt werden:
 - `*.svg`
 - `*.woff` oder `*.woff2`
 
-Um die Icon-Schriftart einzubinden, muss die `*.svg` unter `System` -> `Einstellungen` in den ThemeManager-Einstellungen
-eingebunden werden.
+Um die Icon-Schriftart einzubinden, muss die `*.svg` unter `System` -> `Einstellungen` unter ThemeManager eingebunden
+werden.
 
 ![Icon-Set einstellen](../../../assets/configuration/icons/settings-icon-set.png){loading=lazy}
 

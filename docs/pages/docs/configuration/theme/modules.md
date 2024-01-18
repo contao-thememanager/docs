@@ -32,14 +32,10 @@ greifen sollen.
 
     Zum Styling der Haupt-Navigation empfiehlt sich die Verwendung dieser Variable, da hiermit der korrekte Media-Query 
     genutzt werden kann:
-
-    **Minimale Breite**
-    ```scss
+    ```scss title="Minimale Breite (SCSS)"
     @media (min-width: $navigation-behaviour-min-width)
     ```
-
-    **Maximale Breite**
-    ```scss
+    ```scss title="Maximale Breite (SCSS)"
     @media (max-width: #{sub($navigation-behaviour-min-width, .02px)})
     ```
 
