@@ -161,13 +161,94 @@ Einstellungen greifen hier bei folgenden Bildschirmbreiten bzw.
 
 `$article-outer-padding`
 
+Ist kein anderes Gutter im Artikel eingestellt, so ist der Abstand zum Bildschirmrand auf mobilen Endgeräten immer die
+Hälfte des konfigurierten [Grid-Gutter](#grid). Möchte man diesen Abstand vergrößern, so kann ein zusätzlicher Abstand
+konfiguriert werden.
+
+<figure markdown>
+  ![Äußeres Padding von Artikeln](../../../../assets/configuration/layout/article-outer-padding.png){loading=lazy width="375"}
+  <figcaption>Padding am Bildschirmrand</figcaption>
+</figure>
+
+Da ab bestimmten Auflösungen die Artikelbreite agiert, verhält sich das `$outer-padding` wie der Tabelle zu entnehmen.
+
+| Breakpoints           |       Fensterbreite |                         Padding |
+|-----------------------|--------------------:|--------------------------------:|
+| kleiner **`xs`**      |            `<600px` |    **`$article-outer-padding`** |
+| **`xs`** bis  **`s`** | `600px - 1023.98px` | **`$article-outer-padding-xs`** |
+| **`s`** bis  **`m`**  | `600px - 1023.98px` |  **`$article-outer-padding-s`** |
+| ab **`m`**            |           `≥1024px` |                         **`0`** |
+
+!!! warning
+
+    Der äußere Abstand greift nur, wenn eine horizontale Breite im Artikel eingestellt wurde.
+
 ### Vertikaler Abstand
 
 `$article-spacing-*` `$article-main-spacing-bottom`
 
-### Höhen
+Um Artikel optisch voneinander zu trennen, können in den StyleManager-Optionen die Abstände unter `Article-Spacing`
+ausgewählt werden.
 
-`$article-min-vheight` `$article-options-vheight`
+Folgende Konfigurationen können über alle Breakpoints vorgenommen werden und beeinflussen den
+inneren Abstand (`padding`) von Artikeln.
+
+| Top-Bottom-Spacing | Media-Query                | CSS-Klasse  |
+|--------------------|----------------------------|-------------|
+| Small              | Wert in `$x-spacing-small` | `.art-py-1` |
+| Medium             | Breakpoint `l`             | `.art-py-2` |
+| Large              | Breakpoint `m`             | `.art-py-3` |
+
+!!! info "Article-Spacing für mobile Endgeräte"
+
+    Die mit dem Präfix `$article-spacing-xs-*` versehenen Variablen gelten auch für Bildschirmbreiten `<600px`.
+
+### Artikel-Höhen
+
+`$article-options-vheight` `$article-options-height`
+
+Möchte man Vollbild-Artikel erstellen, sodass diese den gesamten Bildschirm ausfüllen, kommt man um
+[Viewport-Höhen](https://web.dev/blog/viewport-units?hl=de) nicht herum.
+
+Mithilfe der Variable `$article-min-vheight` lassen sich mehrere `vh` Höhen generieren, welche in Artikeln unter
+`Component > Height` ausgewählt werden können. Das generierte CSS wird als Custom Property bereitgestellt und
+beeinflusst die Höhe von Artikeln über:
+
+```css title="CSS"
+.mod_article > .inside {
+    min-height: var(--art-hght)
+}
+```
+
+!!! info
+
+    Im [Exkurs: Artikel-Höhe und Kopfzeilen-Höhe](header.md#exkurs-artikel-höhe-und-kopfzeilen-höhe) gibt es mehr
+    Informationen zur Artikel-Höhe.
+
+Über `$article-options-height` können zusätzliche Höhen kommasepariert mit einer Einheit eingetragen werden, sodass auch
+feste Höhen generiert werden können.
+
+```
+500px,800px,40rem
+```
+
+Nach dem Kompilieren stehen hierbei folgende Klassen zur Verfügung, welche über die angegebenen Optionen erstellt
+werden.
+
+| Variable                   |  Wert |   CSS-Klasse |                  CSS |
+|----------------------------|------:|-------------:|---------------------:|
+| `$article-options-vheight` |    50 |   `.a-vh-50` |  `--art-hght: 50dvh` |
+|                            |    75 |   `.a-vh-75` |  `--art-hght: 75dvh` |
+|                            |   100 |  `.a-vh-100` | `--art-hght: 100dvh` |
+|                            |
+| `$article-options-height`  | 500px | `.a-h-500px` |  `--art-hght: 500px` |
+|                            | 40rem | `.a-h-40rem` |  `--art-hght: 40rem` |
+
+!!! abstract "Dynamische Variablen"
+
+    Dynamische Einstellungen stehen erst nach `Speichern & Kompilieren` zur Verfügung, da die neuen Optionen sowohl in
+    den Style-Sheet-Dateien als auch in den dynamischen Style-Manager-Optionen (templates/style-manager-tm.xml)
+    hinterlegt werden.
 
 ___
 

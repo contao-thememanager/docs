@@ -48,9 +48,9 @@ einstellen:
 
 | Breakpoints           |       Fensterbreite | Größe / Genutzte Variable |
 |-----------------------|--------------------:|--------------------------:|
-| kleiner **`xs`**      |          ` < 600px` |   **`*-font-size-small`** |
+| kleiner **`xs`**      |           ` <600px` |   **`*-font-size-small`** |
 | **`xs`** bis  **`m`** | `600px - 1023.98px` |  **`*-font-size-medium`** |
-| ab **`m`**            |         `>= 1024px` |         **`*-font-size`** |
+| ab **`m`**            |           `≥1024px` |         **`*-font-size`** |
 
 ???+ example "Verfügbare (S)CSS-Variablen"
 

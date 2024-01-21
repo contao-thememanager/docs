@@ -74,7 +74,7 @@ wenn <span style="background: var(--md-primary-fg-color); color: #FFF">Text auf 
     **Bild-Einstellungen** (`Image -> Aspect-Ratio`) bereitstellt.
 
     Dynamische Einstellungen stehen erst nach `Speichern & Kompilieren` zur Verfügung, da die neuen Optionen sowohl in
-    den Style-Sheet-Dateien, als auch in den dynamischen Style-Manager-Optionen (templates/style-manager-tm.xml)
+    den Style-Sheet-Dateien als auch in den dynamischen Style-Manager-Optionen (templates/style-manager-tm.xml)
     hinterlegt werden.
 
 [^1]: Wie der `box-shadow` eingestellt wird, kann
