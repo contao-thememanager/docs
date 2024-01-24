@@ -65,7 +65,6 @@ theme:
         - navigation.top
         - navigation.tabs
         - navigation.footer
-        - navigation.prune
         - navigation.tracking
         - announce.dismiss
         - content.action.edit
