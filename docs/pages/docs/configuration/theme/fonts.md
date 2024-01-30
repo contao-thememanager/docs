@@ -21,8 +21,9 @@ Die Einstellung überschreibt die Schriftart der Webseite.
 
 !!! warning
 
-    Sofern es sich nicht um eine Standard-Schriftart handelt, muss die Schrift zusätzlich im Seitenlayout eingebunden
-    werden. Zwecks Ladezeiten-Optimierung empfiehlt sich eine lokale Einbindung der Schriftarten.
+    Sofern es sich nicht um eine [Standard-Schriftart](https://developer.mozilla.org/en-US/docs/Web/CSS/generic-family)
+    handelt, muss die Schrift in Anführungszeichen `"Meine Schriftart"` gesetzt und zusätzlich im Seitenlayout
+    eingebunden werden. Zwecks Ladezeiten-Optimierung empfiehlt sich immer eine lokale Einbindung der Schriftarten.
 
 ??? example "Verfügbare (S)CSS-Variablen"
 
