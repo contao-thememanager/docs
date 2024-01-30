@@ -19,13 +19,13 @@ Unterstützte Contao-Versionen werden nachfolgend aufgelistet.
 Grundsätzlich wird immer die aktuelle [Long-Term-Support-Version](https://contao.org/de/release-plan) von Contao
 supportet.
 
-| Version    |               Support |
-|------------|----------------------:|
-| 4.13 (LTS) |                     ✅ |
-| 5.0        |                     ❌ |
-| 5.1        | (Support eingestellt) |
-| 5.2        |                     ✅ |
-| 5.3 (LTS)  |        (Februar 2024) |
+| Version    | Support |
+|------------|--------:|
+| 4.13 (LTS) |       ✅ |
+| 5.0        |       ❌ |
+| 5.1        |       ❌ |
+| 5.2        |       ✅ |
+| 5.3 (LTS)  |       ✅ |
 
 ## Benötigte PHP-Erweiterungen
 
