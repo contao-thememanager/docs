@@ -56,10 +56,11 @@ einstellen:
 ???+ example "Verfügbare (S)CSS-Variablen"
 
     Da sich die Schriftgrößen abhängig des Breakpoints verhalten, gibt es nur eine CSS-Custom-Property für jeden 
-    Headline-Typen. 
+    Headline-Typen.
 
-    Die Typen (h1 - h6) beziehen sich sowohl auf den normalen als auch auf das [Mehrspaltige Layout](# und müssen
-    beim Kopieren der nachfolgenden CSS mit der gewünschten **Zahl** (1-6) ausgetauscht werden.
+    Die Typen (h1 - h6) beziehen sich sowohl auf den normalen als auch auf das
+    [Mehrspaltige Layout](../../installation/setup.md#mehrspaltiges-layout-hauptspalte-linke-spalte-rechte-spalte)
+    und müssen beim Kopieren der nachfolgenden CSS mit der gewünschten **Zahl** (1-6) ausgetauscht werden.
 
     <div class="grid" markdown>
     ```scss title="SCSS"
