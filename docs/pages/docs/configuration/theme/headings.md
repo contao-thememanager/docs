@@ -22,12 +22,13 @@ verändern, wobei die folgenden Einstellungen möglich sind:
 - Zeichenabstand (*letter-spacing*)
 - Textdarstellung (*text-transform*)
 
-!!! info "Einstellungen für den Inhaltsbereich?"
+!!! info "Einstellungen für die Bereiche Hauptspalte / Linke Spalte / Rechte Spalte?"
 
-    Hiermit werden alle Artikel zusammengefasst, welche sich im 
-    [Layout-Bereich](../../installation/setup.md#inhaltslayout) *Hauptspalte* befinden.
+    Hiermit werden alle Artikel zusammengefasst, welche sich in den
+    [Layout-Bereichen](../../installation/setup.md#mehrspaltiges-layout-hauptspalte-linke-spalte-rechte-spalte) *Hauptspalte*, *Linke Spalte* und *Rechte Spalte*
+    befinden.
 
-    Da sich die Einstellungen der Überschriften des `Volle Breite` und `Inhaltsbereich` Layout gleichen, werden diese 
+    Da sich die Einstellungen der Überschriften des `Volle Breite` und dem mehrspaltigen Layout gleichen, werden diese 
     zusammen aufgefasst.
 
 ### Zeilenhöhe
@@ -57,7 +58,7 @@ einstellen:
     Da sich die Schriftgrößen abhängig des Breakpoints verhalten, gibt es nur eine CSS-Custom-Property für jeden 
     Headline-Typen. 
 
-    Die Typen (h1 - h6) beziehen sich sowohl auf den normalen als auch auf den Inhaltsbereich und müssen
+    Die Typen (h1 - h6) beziehen sich sowohl auf den normalen als auch auf das [Mehrspaltige Layout](# und müssen
     beim Kopieren der nachfolgenden CSS mit der gewünschten **Zahl** (1-6) ausgetauscht werden.
 
     <div class="grid" markdown>

@@ -55,10 +55,10 @@ offiziellen [Contao-Dokumentation](https://docs.contao.org/manual/de/layout/them
 Mithilfe des ThemeManager Frameworks benötigen wir nicht mehr für jeden Zweck ein eigenes Layout. Wir empfehlen die
 Erstellung der folgenden zwei Layouts.
 
-| Layout                                   | Beschreibung                                                      |
-|------------------------------------------|-------------------------------------------------------------------|
-| [Volle Breite](#layout-für-volle-breite) | Artikel mit voller Breite                                         |
-| [Inhaltslayout](#inhaltslayout)          | Beinhaltet zusätzlich Artikel mit linker/rechter und Hauptspalte. |
+| Layout                                                                               | Beschreibung                                                      |
+|--------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| [Volle Breite](#layout-für-volle-breite)                                             | Artikel mit voller Breite                                         |
+| [Mehrspaltiges Layout](#mehrspaltiges-layout-hauptspalte-linke-spalte-rechte-spalte) | Beinhaltet zusätzlich Artikel mit linker/rechter und Hauptspalte. |
 
 ### Layout für volle Breite
 
@@ -87,7 +87,7 @@ Reihenfolge ein:
 2. _icon.css
 3. _background.css[^2]
 
-### Inhaltslayout
+### Mehrspaltiges Layout (Hauptspalte / Linke Spalte / Rechte Spalte)
 
 Dieses Layout bedient sich zusätzlich der in Contao integrierten Layoutbereiche:
 
@@ -97,7 +97,7 @@ Dieses Layout bedient sich zusätzlich der in Contao integrierten Layoutbereiche
 
 !!! info
 
-    Die in der [Theme-Konfiguration](../configuration/theme/global.md) zu findende Palette **Überschriften (Inhaltsbereich)** dient lediglich diesem Layout.
+    Die in der [Theme-Konfiguration](../configuration/theme/global.md) zu findende Palette **Überschriften (Hauptspalte / Linke Spalte / Rechte Spalte)** dient lediglich diesem Layout und kann über "Überschriften-Einstellungen erweitern" aktiviert werden.
 
 Um sicherzustellen, dass Artikel sowohl ober- als auch unterhalb des Hauptspaltenbereichs angezeigt werden können,
 kannst du die folgenden Schritte befolgen.
@@ -107,21 +107,11 @@ Im nachfolgenden Beispiel nennen wir dieses Layout **Content**.
 ![Default-Layout duplizieren](../../../assets/setup/4_layout_7.png)
 Dupliziere das zuvor erstellte [Layout](#layout-für-volle-breite) und passe die gewünschte Anzahl der Spalten an.
 
-#### Layout-Columns
-
-| Layout Columns | Funktion                                                                                                     |
-|----------------|--------------------------------------------------------------------------------------------------------------|
-| No Column      | Blendet den verantwortlichen Bereich ein, der für Hauptspalte, Linke Spalte und Rechte Spalte verwendet wird |
-| 1 Column       | Richtet die Hauptspalte und ***eine*** linke oder rechte Spalte korrekt aus (eine Spalte)                    |
-| 2 Columns      | Richtet die Hauptspalte und ***eine*** linke und rechte Spalte korrekt aus (zwei Spalten)                    |
-
 ![Content-Layout einstellen](../../../assets/setup/4_layout_8.png)
 In diesem Beispiel haben wir die Layoutbereiche **Hauptspalte** und **Reche Spalte** hinzugefügt, sodass diese jetzt
-**zwischen** den Layoutbereichen **Hauptspalte Oben** und **Hauptspalte Unten** eingebunden werden müssen.
+**zwischen** den Layoutbereichen **Hauptspalte Oben** und **Hauptspalte Unten** eingebunden werden können.
 
-Die StyleManager-Einstellung der [Layout-Columns](#layout-columns) hängt dabei von der genutzten Anzahl der Spalten ab.
-
-!!! info
+!!! info "Horizontaler und vertikaler Abstand"
 
     Der horizontale und vertikale Abstand dieser Layoutbereiche lassen sich über das Article-Spacing im Layout 
     einstellen.

@@ -99,7 +99,7 @@ ___
 ## Verhalten
 
 Die Einstellungen dieser Kategorie beeinflussen das Verhalten des
-[Inhaltslayouts](../../installation/setup.md#inhaltslayout) und ermöglichen dabei drei einstellbare Breiten
+[mehrspaltigen Layouts](../../installation/setup.md#mehrspaltiges-layout-hauptspalte-linke-spalte-rechte-spalte) und ermöglichen dabei drei einstellbare Breiten
 (small, medium, large) für die linke und/oder rechte Spalte.
 
 ### Verhaltensänderung
