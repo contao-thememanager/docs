@@ -49,8 +49,9 @@ eingestellt werden:
 | Hauptspalte Unten     | main-below | Oberhalb der Fußzeile   | Dient der Einbindung von Artikeln, welche über die gesamte Bildschirmbreite gehen sollen. |                                               
 
 !!! info
-Weitere Informationen zu Layouts findest du in der
-offiziellen [Contao-Dokumentation](https://docs.contao.org/manual/de/layout/theme-manager/seitenlayouts-verwalten/).
+
+    Weitere Informationen zu Layouts findest du in der
+    offiziellen [Contao-Dokumentation](https://docs.contao.org/manual/de/layout/theme-manager/seitenlayouts-verwalten/).
 
 Mithilfe des ThemeManager Frameworks benötigen wir nicht mehr für jeden Zweck ein eigenes Layout. Wir empfehlen die
 Erstellung der folgenden zwei Layouts.
@@ -124,7 +125,7 @@ Grid, die Breakpoint-Einstellungen und vieles mehr.
 
 ![Theme-Konfiguration](../../../assets/setup/3_theme_4.png)
 Die Theme-Konfiguration lässt sich nun über die Theme-Übersicht mithilfe des
-<img width="22" src="../../../assets/logo.svg" data-no-zoom> **Theme konfigurieren**-Buttons aufrufen.
+<img width="22" src="/docs/assets/logo.svg" data-no-zoom> **Theme konfigurieren**-Buttons aufrufen.
 
 ![Beispiel der Theme-Konfiguration](../../../assets/setup/5_config_1.png)
 *Änderung der primären Farbe*
