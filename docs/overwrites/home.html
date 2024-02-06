@@ -3,6 +3,10 @@
 {{ super() }}
 <style>
 
+  .md-header--shadow {
+    box-shadow: none;
+  }
+
   .md-main {
     height: 0;
     width: 0;
@@ -101,6 +105,12 @@
       margin-left: 1.0rem;
       margin-right: 4.0rem;
       align-items: center;
+    }
+  }
+  
+  @media screen and (min-width: 76.25em) {
+    .md-main {
+      display: none;
     }
   }
 </style>
