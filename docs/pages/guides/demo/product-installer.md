@@ -28,10 +28,10 @@ Hier findest Du eine Liste der letzten Demo-Versionen. Klicke auf die Version, d
     Produkte, welche sich über den _Product Installer_ installieren lassen, enden immer mit `.content`
 
 
-| Contao Version |                                           Product Installer                                           |                               Contao Manager Artefakt                               |
-|----------------|:-----------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------:|
-| `5.2`          |    [:material-download:](https://www.contao-thememanager.com/files/demo/contao-thememanager-demo-5.2-1.0.0.content)    |  [:material-download:](https://github.com/contao-thememanager/demo/blob/5.2/docs/demo/ctm-demo.zip)  |
-| `4.13`         |   [:material-download:](https://www.contao-thememanager.com/files/demo/contao-thememanager-demo-4.13-1.0.0.content)    |  [:material-download:](https://github.com/contao-thememanager/demo/blob/4.13/docs/demo/ctm-demo.zip) |
+| Contao Version |                                                 Product Installer                                                 |                                       Contao Manager Artefakt                                       |
+|----------------|:-----------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------:|
+| `5.3`          | [:material-download:](https://www.contao-thememanager.com/files/demo/contao-thememanager-demo-5.3-1.0.0.content)  | [:material-download:](https://github.com/contao-thememanager/demo/blob/5.3/docs/demo/ctm-demo.zip)  |
+| `4.13`         | [:material-download:](https://www.contao-thememanager.com/files/demo/contao-thememanager-demo-4.13-1.0.0.content) | [:material-download:](https://github.com/contao-thememanager/demo/blob/4.13/docs/demo/ctm-demo.zip) |
 
 
 ## 3. Demo installieren und einrichten
