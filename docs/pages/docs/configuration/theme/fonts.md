@@ -193,12 +193,14 @@ Verzierungen zur Auswahl:
 
     <div class="grid" markdown>
     ```scss title="SCSS"
+    $link-font-weight
     $link-color-[typ]          
     $link-hover-color-[typ]   
     $link-decoration-[typ]  
     $link-hover-decoration-[typ]
     ```
     ```css title="CSS"
+    var(--a-fw)
     var(--a-clr)
     var(--a-clr-hvr)
     var(--a-td)

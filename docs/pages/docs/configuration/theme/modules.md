@@ -62,6 +62,17 @@ Folgende Einstellungen sind für die Navigationslinks verfügbar:
 | `$navigation-item-font-weight` | Schriftstärke ab dem [Media-Query](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries) `$navigation-behaviour-width`     |
 | `$navigation-item-padding`     | Padding / Polster ab dem [Media-Query](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries) `$navigation-behaviour-width` |
 
+??? example "Verfügbare (S)CSS-Variablen"
+
+    <div class="grid" markdown>
+    ```scss title="SCSS"
+    $navigation-item-font-size
+    ```
+    ```css title="CSS"
+    var(--nav-fs)
+    ```
+    </div>
+
 ## Breadcrumb
 
 Dieser Reiter befasst sich mit der Einstellung des Trennzeichens (z. B. `›`) einer Brotkrümel-Navigation, sodass diese

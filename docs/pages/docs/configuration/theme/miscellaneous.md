@@ -68,7 +68,7 @@ wenn <span style="background: var(--md-primary-fg-color); color: #FFF">Text auf 
 
 `$aspect-ratios`
 
-!!! abstract "Dynamische Variable"
+!!! abstract "Aspect ratios"
 
     Hierbei handelt es sich um eine dynamische Veriable, welche verschiedene Seitenverhältnisse in den 
     **Bild-Einstellungen** (`Image -> Aspect-Ratio`) bereitstellt.
@@ -77,6 +77,18 @@ wenn <span style="background: var(--md-primary-fg-color); color: #FFF">Text auf 
     den Style-Sheet-Dateien als auch in den dynamischen Style-Manager-Optionen (templates/style-manager-tm.xml)
     hinterlegt werden.
 
+## Weitere Hintergrund-Größen
+
+`$background-sizes`
+
+!!! abstract "Background sizes"
+
+    Hierbei handelt es sich um eine dynamische Veriable, welche weitere Hintergrundgrößen in den 
+    **Hintergrund-Einstellungen** (`Background -> Size`) bereitstellt.
+
+    Dynamische Einstellungen stehen erst nach `Speichern & Kompilieren` zur Verfügung, da die neuen Optionen sowohl in
+    den Style-Sheet-Dateien als auch in den dynamischen Style-Manager-Optionen (templates/style-manager-tm.xml)
+    hinterlegt werden.
+
 [^1]: Wie der `box-shadow` eingestellt wird, kann
 den [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow) entnommen werden.
-
