@@ -24,7 +24,7 @@ title: Product Installer
 
 ## 2. Demo herunterladen
 
-Hier findest Du eine Liste der letzten Demo-Versionen. Klicke auf die Version, die Du installieren möchtest, sowie zu
+Hier findest Du eine Liste der letzten Demo-Versionen. Suche die Version, welche Du installieren möchtest, sowie zu
 Deiner Contao-Version passt und lade das entsprechende Paket herunter.
 
 !!! note
@@ -39,7 +39,7 @@ Deiner Contao-Version passt und lade das entsprechende Paket herunter.
 ## 3. Demo installieren und einrichten
 
 Sofern der _Product Installer_ installiert und die Demo heruntergeladen ist, können wir mit der Einrichtung dieser
-beginnen. Im Contao-Backend erscheint nun der Punkt "Produktverwaltung", welcher bei Klick den _Product Installer_
+beginnen. Nach erfolgreicher Installation erscheint ein neuer Menüpunkt "Produktverwaltung" im Contao-Backend, welcher bei Klick den _Product Installer_
 öffnet.
 
 ![product-installer.png](../../../assets/product-installer/product-installer.png)
@@ -49,7 +49,7 @@ beginnen. Im Contao-Backend erscheint nun der Punkt "Produktverwaltung", welcher
 Im nächsten Schritt möchten wir die Demo registrieren, damit die Einrichtung über den _Product Installer_ zur Verfügung
 gestellt wird.
 
-Mit Klick auf **Produkt registrieren** öffnet sich eine Maske, in der ein bis mehrere Schnittstellen zur Verfügung
+Mit Klick auf **Produkt registrieren** gelangen wir in die nächste Maske, in der ein bis mehrere Schnittstellen (abhängig der installierten Abhängigkeiten) zur Verfügung
 gestellt werden. Da wir die Demo als lokale content-Datei vorliegen haben, können wir diese direkt über die
 Schnittstelle "Produkte hochladen" registrieren.
 
@@ -71,7 +71,7 @@ Anschließend wird die Produktdatei vom _Product Installer_ geprüft und angezei
 
 #### Produktprüfung
 
-Hat alles funktioniert sehen wir im nächsten Schritt das soeben hochgeladene Produkt.
+Hat alles funktioniert bekommen wir im nächsten Schritt eine Übersicht des Produktes.
 
 !!! note
 
@@ -83,8 +83,8 @@ Hat alles funktioniert sehen wir im nächsten Schritt das soeben hochgeladene Pr
 
 #### Contao Manager Authentifizierung
 
-In der nächsten Maske prüft der _Product Installer_, ob er eine Verbindung zum Contao Manager herstellen kann. Diese
-wird benötigt, um das Produkt ordnungsgemäß zu installieren.
+In der nächsten Maske wird geprüft, ob eine Verbindung zum Contao Manager hergestellt werden kann. Diese
+wird benötigt, um das Produkt ordnungsgemäß mit allen Abhängigkeiten zu installieren.
 In diesem Schritt könnten drei Szenarien auftreten. Bitte folge den Hinweisen des _Product Installers_, um Dein Projekt
 im Contao Manager zu authentifizieren.
 
@@ -96,17 +96,16 @@ im Contao Manager zu authentifizieren.
 
 !!! warning
 
-    Seit der Contao Manager Version `1.7.0` muss das Projekt eine valide SSL-Verbindung aufweisen, um die
+    Ab Version `1.7.0` des Contao Managers muss das Projekt eine SSL-Verbindung aufweisen, um die
     Authentifizierungen durchzuführen.
 
 !!! question "Ich habe den Contao-Manager installiert, der Product-Installer erkennt es aber nicht?"
 
-    Sehe zunächst im Contao-Backend nach ob der Contao-Manager als Menüpunkt auftaucht.
+    Prüfe zunächst, ob der Contao Manager installiert ist, aufgerufen werden kann und funktioniert.
 
-    Gehe zudem auch sicher, dass in der composer.json das `contao/manager-bundle` inkludiert und diese Abhängigkeit
-    installiert ist.
+    Stelle zudem sicher, dass in der composer.json das `contao/manager-bundle` als Abhängigkeit hinterlegt und installiert ist.
 
-    Möglicherweise wurde der Dateiname der `contao-manager.phar.php` sogar abgeändert, ohne diese Änderung in einer
+    Möglicherweise wurde der Dateiname der `contao-manager.phar.php` abgeändert, ohne diese Änderung in einer
     `config/config.yaml` der Contao-Installation einzutragen:
 
     ```yaml
@@ -114,7 +113,7 @@ im Contao Manager zu authentifizieren.
       manager_path: neuerDateiName.phar.php
     ```
     
-    Cleare danach den Cache.
+    Lösche außerdem anschließend den Cache und versuche es erneut.
 
 Sofern die Verbindung hergestellt wurde, siehst Du folgende Maske:
 
@@ -123,7 +122,7 @@ Sofern die Verbindung hergestellt wurde, siehst Du folgende Maske:
 #### Produktvorbereitung und -registrierung
 
 Nach Klick auf **Weiter** kommen wir in die eigentliche Produktregistrierung und Installation der Abhängigkeiten. Hier
-erhältst du eine Übersicht der Prozesse, welche durchgeführt werden müssen, um Dein Produkt zu registrieren und
+erhältst du eine Übersicht der Prozesse, welche durchgeführt werden müssen, um dein Produkt zu registrieren und
 anschließend einrichten zu können.
 Mit einem weiteren Klick auf **Starten** wird dieser Prozess gestartet.
 
@@ -140,13 +139,13 @@ gestartet werden.
 !!! note
 
     Sollten Probleme während der Datenbankmigration auftreten, kann dieser Schritt übersprungen werden. Bitte führe die
-    Migration der Datenbank anschließend über den Contao Manager durch.
+    Migration der Datenbank anschließend über den Contao Manager oder auf der Kommandozeile durch.
 
 #### Produkteinrichtung
 
-Sofern alle Prozesse erfolgreich durchgelaufen sind, steht das Produkt, in diesem Fall unsere Demo, in der
-Produktübersicht des _Product Installers_ bereit und wartet auf die Einrichtung.
-Über das Menü ( **⋮** ) können Sie Informationen des Produktes einsehen, sowie die Einrichtung dessen starten.
+Sofern alle Prozesse erfolgreich durchgelaufen sind, steht das Produkt in der
+Produktübersicht des _Product Installers_ bereit und kann somit eingerichtet werden.
+Über das Menü ( **⋮** ) kannst Du Informationen des Produktes einsehen, sowie die Einrichtung dessen starten.
 
 !!! info
 
@@ -154,13 +153,10 @@ Produktübersicht des _Product Installers_ bereit und wartet auf die Einrichtung
 
 ![product-installer.png](../../../assets/product-installer/product-products.png)
 
-In der Einrichtungsmaske eines Produktes wird zunächst noch einmal geprüft, ob alle Abhängigkeiten installiert und auf
-dem neusten Stand sind. Sollte dies der Fall sein, kannst du die Einrichtung über das Menü ( **⋮** ) des hier verankerte
-Inhaltspaketes starten.
+In der Einrichtungsmaske eines Produktes wird zunächst geprüft, ob alle Abhängigkeiten installiert und auf
+dem neusten Stand sind. Ein Produkt kann mehrere sog. Inhaltspakete beinhalten, welche sich einzeln einrichten lassen. Die Einrichtung kann über das Menü ( **⋮** ) des jeweiligen
+Inhaltspaketes gestartet werden.
 
-!!! info
-
-    Ein Produkt kann mehrere Inhaltspakete oder auch andere Aufgaben beinhalten, welche sich separat einrichten lassen.
 
 !!! warning
 

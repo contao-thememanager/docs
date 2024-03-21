@@ -23,7 +23,7 @@ Sofern wir eine Artefakt-Datei vorliegen haben, können wir diese ganz einfach p
 
 ![product-installer.png](../../../assets/contao-manager/artefakt-filepicker.png)
 
-Anschließend prüft der Contao Manager das hochgeladene Paket und fragt bei Erfolg, ob diese Paket hinzugefügt werden soll.
+Anschließend prüft der Contao Manager das hochgeladene Paket und fragt bei Erfolg, ob dieses Paket hinzugefügt werden soll.
 
 ![product-installer.png](../../../assets/contao-manager/artefakt-add-package.png)
 
