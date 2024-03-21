@@ -90,5 +90,26 @@ wenn <span style="background: var(--md-primary-fg-color); color: #FFF">Text auf 
     den Style-Sheet-Dateien als auch in den dynamischen Style-Manager-Optionen (templates/style-manager-tm.xml)
     hinterlegt werden.
 
+## Dynamische Display-Eigenschaften
+
+`$activate-display-utilities` `$display-properties`
+
+Wenn `$activate-display-utilities` aktiviert ist, erzeugt dies die in `$display-properties`
+eingetragenen [Display-Eigenschaften](https://developer.mozilla.org/en-US/docs/Web/CSS/display), welche nach dem
+Kompilieren für alle Breakpoints gelten. Nach der Generierung erfolgt die Benennung der Klassen nach folgendem Schema:
+
+* ```.d-{Eigenschaft}``` für den Standard
+* ```.d-{Breakpoint}-{Wert}``` für die Breakpoints xs, s, m, l und xl.
+
+In `$display-properties` können die gewünschten
+[Display-Eigenschaften](https://developer.mozilla.org/en-US/docs/Web/CSS/display) nacheinander eingetragen werden.
+
+![Dynamisch generierte Display-Eigenschaften](../../../../assets/configuration/misc/display-properties.png){loading=lazy}
+
+Bei
+```none block flex table grid inline-block inline-flex inline-grid```
+stehen nach dem Kompilieren die Eigenschaften in der StyleManager-Gruppe "Display" in jedem Artikel, Inhaltselement und
+Modul zur Verfügung.
+
 [^1]: Wie der `box-shadow` eingestellt wird, kann
 den [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow) entnommen werden.
