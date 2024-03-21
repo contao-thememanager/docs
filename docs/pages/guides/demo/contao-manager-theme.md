@@ -8,7 +8,7 @@ title: Contao Manager Theme
 Hier findest Du [eine Anleitung, wie Erweiterungen über den Contao Manager installiert](https://docs.contao.org/manual/de/installation/erweiterungen-installieren/) werden können.
 
 ## 2. Theme installieren
-Sofern wir den Contao Manager installiert haben und aufrufen, bekommen wir folgende Maske angezeigt, mit der Aufforderung Contao einzurichten.
+Sofern wir den Contao Manager installiert haben und aufrufen, sehen wir folgende Maske, mit der Aufforderung Contao einzurichten.
 
 ![product-installer.png](../../../assets/contao-manager/theme-setup.png)
 
@@ -24,7 +24,7 @@ Haben wir die Demo gefunden können wir uns mit einem Klick auf _Details_ das Pa
 ![product-installer.png](../../../assets/contao-manager/theme-current-version.png)
 
 !!! warning 
-    Beachte, dass die Version der Demo, der Version von Contao entsprechen muss. 
+    Beachte, dass die Version der Demo der Version von Contao entsprechen muss. 
 
 ![product-installer.png](../../../assets/contao-manager/theme-fixed-version.png)
 
