@@ -70,6 +70,39 @@ Dient der Einstellung der vertikalen Zeilenhöhe von Schriften.
     ```
     </div>
 
+### Schriftstärken
+
+`$font-weight-base` `$font-weight-*` `$strong-font-weight`
+
+Die Standard-Schriftstärke kann über **$font-weight-base** festgelegt werden. Restliche Schriftstärken werden lediglich
+in der Konfiguration verwendet.
+
+!!! info
+
+    Sofern keine Standard-Schriftart eingestellt wurde, müssen die Schriftstärken der Schriftart eingebunden werden,
+    damit der Effekt sichtbar wird.
+
+??? example "Verfügbare (S)CSS-Variablen"
+
+    <div class="grid" markdown>
+    ```scss title="SCSS"
+    $font-weight-base
+    $font-weight-light
+    $font-weight-regular
+    $font-weight-medium
+    $font-weight-semibold
+    $font-weight-bold
+    ```
+    ```css title="CSS"
+    var(--fw-base)
+    var(--fw-light)
+    var(--fw-regular)
+    var(--fw-medium)
+    var(--fw-semibold)
+    var(--fw-bold)
+    ```
+    </div>
+
 ### Schriftfarben
 
 `$text-color-regular` `$text-color-invert`
@@ -97,38 +130,27 @@ Komponenten mit diesen Farben vorbelegt.
     ```
     </div>
 
-### Schriftstärken
+---
 
-`$font-weight-base` `$font-weight-*` `$strong-font-weight`
+## Strong / Bold
 
-Die Standard-Schriftstärke kann über **$font-weight-base**, die `<strong>`-Schriftstärke über $strong-font-weight
-festgelegt werden. Restliche Schriftstärken werden lediglich in der Konfiguration verwendet.
+### Strong-Schriftstärke
+
+`$strong-font-weight`
+
+Dient der Einstellung der Schriftstärke von allen `<strong>`-Elementen.
+
+### Strong-Farben
+
+`$strong-color-*`
+
+Hiermit können die Strong-Farben angepasst werden, welche über die Textfarbe (regulär, invertiert) über den
+Style-Manager eingestellt werden können.
 
 !!! info
 
-    Sofern keine Standard-Schriftart eingestellt wurde, müssen die Schriftstärken der Schriftart eingebunden werden,
-    damit der Effekt sichtbar wird.
-
-??? example "Verfügbare (S)CSS-Variablen"
-
-    <div class="grid" markdown>
-    ```scss title="SCSS"
-    $font-weight-base
-    $font-weight-light
-    $font-weight-regular
-    $font-weight-medium
-    $font-weight-semibold
-    $font-weight-bold
-    ```
-    ```css title="CSS"
-    var(--fw-base)
-    var(--fw-light)
-    var(--fw-regular)
-    var(--fw-medium)
-    var(--fw-semibold)
-    var(--fw-bold)
-    ```
-    </div>
+    Eine über den Style-Manager eingestellte Strong-Farbe überschreibt immer auch die Text-Farbe und setzt die Invertierung
+    durch die eingestellte Text-Farbe außer Kraft.
 
 ---
 
