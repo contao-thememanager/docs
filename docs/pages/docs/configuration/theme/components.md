@@ -374,3 +374,20 @@ Mehr Informationen zum Verhalten von Bild und Text im `Box`-Modus können im
 
     Wird ein Bild links oder rechts vom Text positioniert, greift diese Einstellung erst ab der eingestellten
     Bildschirmbreite unter [$image-text-behaviour-min-width](layout.md#bild-text).
+
+---
+
+## Medien
+
+### Video
+
+`$video-bg`
+
+Dient der Einstellung der Hintergrundfarbe von selbst gehosteten Videos, welche über das Element Video eingebunden
+werden. Für Videos können nicht nur Höhe und Breite eingegeben werden, es kann auch ein Video-Poster (Vorschaubild)
+ausgewählt werden, welches jedoch keine Bildgröße erhält.
+
+Es wird empfohlen, dass das genutzte Vorschaubild dasselbe Seitenverhältnis wie das des Videos hat. Sollte dies nicht
+ausreichen, kann im StyleManager unter `Element > Image` das
+[Seitenverhältnis](miscellaneous.md#seitenverhältnisse-für-bilder) angepasst werden. Dieses beeinflusst den Container
+des Videos, sodass das Video seine Originalgröße behält.
