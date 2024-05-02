@@ -11,6 +11,12 @@ Theme erstellen kannst und auf mögliche Schwierigkeiten, die dir dabei begegnen
 Zudem erhältst du hier weitere Ratschläge, Tipps und hilfreiche Hinweise, die dir während des gesamten Prozesses der
 Theme-Entwicklung nützlich sein können.
 
+!!! danger "Der Name `_theme.scss` ist reserviert!"
+
+    Deine eingebundene Skin-Datei sollte niemals den Namen `_theme.scss` tragen, da diese für das Contao ThemeManager
+    Framework reserviert ist. Solltest du Teile des Frameworks anpassen wollen, kannst du in [Overrides](override.md)
+    nachlesen, wie dies funktioniert.
+
 ## Theme-Compiler
 
 Eines der Tools des Contao ThemeManager ist
