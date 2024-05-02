@@ -27,10 +27,13 @@ nav:
     - Anleitungen:
           - pages/guides/index.md
           - Demo:
-              - Demo installieren:
+              - Installation:
                   - pages/guides/demo/product-installer.md
                   - pages/guides/demo/contao-manager-theme.md
                   - pages/guides/demo/contao-manager-artefakt.md
+          - Skin:
+              - pages/guides/skin/introduction.md
+              - pages/guides/skin/override.md
 
 #    - Erweiterung:
 #          - pages/extensions/index.md
