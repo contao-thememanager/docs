@@ -21,7 +21,6 @@ nav:
                           - pages/docs/configuration/theme/header.md
                           - pages/docs/configuration/theme/miscellaneous.md
                           - pages/docs/configuration/theme/layout.md
-                    - pages/docs/configuration/skin.md
                     - pages/docs/configuration/icon-set.md
                     - pages/docs/configuration/backgrounds.md
     - Anleitungen:
@@ -33,7 +32,7 @@ nav:
                   - pages/guides/demo/contao-manager-artefakt.md
           - Skin:
               - pages/guides/skin/introduction.md
-              - pages/guides/skin/override.md
+              - pages/guides/skin/setup-override.md
 
 #    - Erweiterung:
 #          - pages/extensions/index.md

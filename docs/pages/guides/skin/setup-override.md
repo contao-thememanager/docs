@@ -1,13 +1,44 @@
 ---
-title: Überschreiben / Anpassen
+title: Konfiguration & Überschreiben
 ---
 
-# Überschreiben und Anpassen von eingebundenen Themes und des Frameworks
+# Konfiguration des eigenen Skins und Überschreiben von vorhandenen Bestandteilen
 
-Diese Anleitung beschreibt die Möglichkeit, in die Kompilierung der SCSS-Dateien einzugreifen, sodass gezielte Dateien
-umgeschrieben, bzw. ausgetauscht werden können.
+Diese Anleitung beschreibt die Möglichkeit, deinen eigenen Skin mithilfe des Contao ThemeManager zu nutzen, damit die
+eingestellten Variablen in deinen SCSS-Dateien verwendet werden können.
+Über den Theme-Compiler kannst du zusätzlich in die Kompilierung eingreifen, sodass gezielt Dateien überschrieben, bzw.
+ausgetauscht werden können.
+
+Jede SCSS-Datei, welche über Theme-Quelldateien eingebunden wird, kann auf alle Variablen der
+[Theme-Konfiguration](../../docs/configuration/theme/overview.md) zugreifen.
+
+## Dein eigener Skin / Einbinden eigener SCSS-Dateien
+
+Nachdem du die [Einrichtung](../../docs/installation/setup.md) durchgeführt hast, kannst du in einem Theme deine
+_Theme-Quelldateien_ einbinden. Für jede Quell-datei wird eine `*.css`-Datei mit selbem Namen abgelegt.
+
+!!! info "Dateien im Layout einbinden"
+
+    Nach dem ersten Kompilieren musst du deine css-Dateien im Layout einbinden.
 
 ![override_theme.png](../../../assets/guides/override_theme.png)
+
+### Theme-Quelldateien zusammenfassen
+
+Hat man mehrere Dateien ausgewählt, werden diese durch Aktivieren dieser Funktion in eine `*.css`-Datei zusammengefasst.
+Stelle sicher, dass du beim Hinzufügen von neuen Quell-Dateien auch die neue Datei im Layout einbindest, da sich der
+Dateiname ändern könnte.
+
+### Backup-Dateien anlegen
+
+Mithilfe dieser Option werden bei jedem Kompilieren die vorherigen Kompilate in einem Unterordner `backup` abgelegt.
+
+!!! warning "Backup-Dateien anlegen"
+
+    Diese Option sollte nicht während der Entwicklung aktiviert werden, da Backup-Dateien nicht gelöscht werden.
+    
+
+
 
 ## Überschreiben des Contao ThemeManager Frameworks
 
