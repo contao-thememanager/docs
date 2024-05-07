@@ -58,7 +58,7 @@ Erstellung der folgenden zwei Layouts.
 
 | Layout                                                                               | Beschreibung                                                      |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [Volle Breite](#layout-für-volle-breite)                                             | Artikel mit voller Breite                                         |
+| [Volle Breite](#layout-fur-volle-breite)                                             | Artikel mit voller Breite                                         |
 | [Mehrspaltiges Layout](#mehrspaltiges-layout-hauptspalte-linke-spalte-rechte-spalte) | Beinhaltet zusätzlich Artikel mit linker/rechter und Hauptspalte. |
 
 ### Layout für volle Breite
@@ -106,7 +106,7 @@ kannst du die folgenden Schritte befolgen.
 Im nachfolgenden Beispiel nennen wir dieses Layout **Content**.
 
 ![Default-Layout duplizieren](../../../assets/setup/4_layout_7.png)
-Dupliziere das zuvor erstellte [Layout](#layout-für-volle-breite) und passe die gewünschte Anzahl der Spalten an.
+Dupliziere das zuvor erstellte [Layout](#layout-fur-volle-breite) und passe die gewünschte Anzahl der Spalten an.
 
 ![Content-Layout einstellen](../../../assets/setup/4_layout_8.png)
 In diesem Beispiel haben wir die Layoutbereiche **Hauptspalte** und **Reche Spalte** hinzugefügt, sodass diese jetzt

@@ -106,7 +106,7 @@ eingestellt werden.
 !!! info
 
     Der Abstand des [Navigations-Items](modules.md#navigations-link--navigations-item) beeinflusst die Höhe zusätzlich,
-    sodass die [Höhe der Kopfzeile](#höhe-der-kopfzeile) eventuell angepasst werden muss. 
+    sodass die [Höhe der Kopfzeile](#hohe-der-kopfzeile) eventuell angepasst werden muss. 
 
 ## Ausrichtung der Elemente
 

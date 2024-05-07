@@ -57,7 +57,7 @@ Import-Pfad folgen.
 ```
 
 Wie du SCSS mit [Index-Files](https://sass-lang.com/documentation/at-rules/import/#index-files) überschreibst, kannst du
-im Kapitel [Überschreiben des Frameworks](#überschreiben-des-css-frameworks) nachlesen.
+im Kapitel [Überschreiben des Frameworks](#uberschreiben-des-css-frameworks) nachlesen.
 
 ### Überschreiben von Theme-Dateien
 

@@ -225,7 +225,7 @@ wobei folgende Einstellungen möglich sind:
 
 `$headline-spacing` `$headline-spacing-*`
 
-Wie bereits in [Schriftgrößen](#schriftgrößen) erklärt, passt sich diese anhand der [Breakpoints](layout.md#breakpoints)
+Wie bereits in [Schriftgrößen](#schriftgroen) erklärt, passt sich diese anhand der [Breakpoints](layout.md#breakpoints)
 an.
 
 !!! info
