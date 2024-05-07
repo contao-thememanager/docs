@@ -64,6 +64,10 @@ im Kapitel [Überschreiben des Frameworks](#uberschreiben-des-css-frameworks) na
 Im nachfolgenden Beispiel wollen wir Teile der an erster Position eingebundenen Theme-Quelldatei mit Namen
 `_theme-[name].scss`_updatesicher_ überschreiben.
 
+!!! info
+
+    Die CSS-Dateien des Theme-Imports sind immer _relativ_ der hier eingebundenen SCSS-Datei.
+
 ```scss title="Originales Theme (_theme-[name].scss)"
 // Framework utils
 @import "ctm_utils";
@@ -96,7 +100,8 @@ Wir möchten in der nachfolgenden Anleitung
       @import "ctm_utils";
       ```
 
-   3. Erstelle im selben Ordner einen Ordner mit Namen `_layout` und den Dateien `_footer.scss` und `_header.scss`.
+   3. Erstelle im selben Ordner, in diesem Beispiel `files/skin/`, einen Ordner mit Namen `_layout` und den Dateien
+      `_footer.scss` und `_header.scss` und berücksichtige dabei die Ordnerstruktur im Theme-Ordner
 
       ![override_theme-4.png](../../../assets/guides/override_theme-4.png)
 
