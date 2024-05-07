@@ -123,7 +123,7 @@ Bei Einstellung der Option `box-shadow` wird ein zusätzlicher Schatten/Schlagsc
 
 Wenn für alle Box-Komponenten nur der Schlagschatten ohne Rahmen erwünscht ist, kann der `$boxed-border-width` auf `0`
 gestellt werden. Soll der Rahmen bei `box` weiterhin bestehen bleiben, kann eine Option über einen eigenen
-[Skin](../skin.md) individuell erweitert werden.
+[Skin](../../../guides/skin/introduction.md) individuell erweitert werden.
 
 ---
 
@@ -176,7 +176,7 @@ Folgende Einstellungen können hierbei vorgenommen werden:
     werden, welche im TinyMCE-Editor erstellt wurden.
 
     Es ist derzeit nicht möglich, dass Tabellenstyles über den StyleManager *aktiviert oder *deaktiviert* werden können.
-    Ist dies nicht erwünscht, können Tabellen im eigenen [Skin](../skin.md) angepasst werden.
+    Ist dies nicht erwünscht, können Tabellen im eigenen [Skin](../../../guides/skin/introduction.md) angepasst werden.
 
 ### Tabellenzelle
 
@@ -266,7 +266,7 @@ Diese Einstellung überschreibt die Schriftart der Icons, die vom ThemeManager v
     Generierung und Bereitstellung von Icons nicht mehr.
 
     Das Ändern der hier eingestellten Schriftart wird nur empfohlen, wenn das Feature nicht benötigt wird und die
-    verwendeten Icons über einen eigenen [Skin](../skin.md) festgelegt werden.
+    verwendeten Icons über einen eigenen [Skin](../../../guides/skin/introduction.md) festgelegt werden.
 
 ### Größe der Icons
 

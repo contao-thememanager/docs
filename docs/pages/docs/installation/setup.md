@@ -149,4 +149,4 @@ erster Stelle eingebunden werden. In bestimmten Ausnahmen wie z.B.
 
 [^2]:
 Es empfiehlt sich die _background.css in der Reihenfolge immer als letzte Stylesheet-Datei einzubinden, damit das
-Überschreiben dieser über einen eigenen [Skin](../configuration/skin.md) einfacher ist.
+Überschreiben dieser über einen eigenen [Skin](../../guides/skin/introduction.md) einfacher ist.

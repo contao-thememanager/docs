@@ -1,5 +1,0 @@
----
-title: Skin
----
-
-# Skin konfigurieren

@@ -12,7 +12,7 @@ Erscheinungsbild jeder Webseite nach Bedarf anzupassen.
 !!! info
 
     Jeder Bezeichner einer einzustellenden Variable entspricht der jeweiligen
-    [SCSS-Variable](https://sass-lang.com/guide/#variables), wodurch der Wert im [Skin](../skin.md)
+    [SCSS-Variable](https://sass-lang.com/guide/#variables), wodurch der Wert im [Skin](../../../guides/skin/introduction.md)
     abgerufen werden kann.
 
 ---
