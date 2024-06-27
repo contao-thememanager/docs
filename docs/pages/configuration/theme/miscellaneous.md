@@ -104,7 +104,7 @@ Kompilieren für alle Breakpoints gelten. Nach der Generierung erfolgt die Benen
 In `$display-properties` können die gewünschten
 [Display-Eigenschaften](https://developer.mozilla.org/en-US/docs/Web/CSS/display) nacheinander eingetragen werden.
 
-![Dynamisch generierte Display-Eigenschaften](../../../../assets/configuration/misc/display-properties.png){loading=lazy}
+![Dynamisch generierte Display-Eigenschaften](../../../assets/configuration/misc/display-properties.png){loading=lazy}
 
 ```
 none block flex table grid inline-block inline-flex inline-grid

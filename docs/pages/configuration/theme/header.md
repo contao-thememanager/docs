@@ -143,7 +143,7 @@ Flexbox-Anweisung `justify-content`[^2] mit den Optionen:
     teilweise mit denen von CSS-Flexbox überlagern, können die `center` und `space-*` Anweisungen weiterhin verwendet
     werden.
 
-    Der Header kann mit folgendem CSS im [Skin](../../../guides/skin/introduction.md) auf CSS-Grid gestellt werden:
+    Der Header kann mit folgendem CSS im [Skin](../../guides/skin/introduction.md) auf CSS-Grid gestellt werden:
     ```css
     header > .inside {
       display: grid;

@@ -12,7 +12,7 @@ Erscheinungsbild jeder Webseite nach Bedarf anzupassen.
 !!! info
 
     Jeder Bezeichner einer einzustellenden Variable entspricht der jeweiligen
-    [SCSS-Variable](https://sass-lang.com/guide/#variables), wodurch der Wert im [Skin](../../../guides/skin/introduction.md)
+    [SCSS-Variable](https://sass-lang.com/guide/#variables), wodurch der Wert im [Skin](../../guides/skin/introduction.md)
     abgerufen werden kann.
 
 ---
@@ -22,7 +22,7 @@ Erscheinungsbild jeder Webseite nach Bedarf anzupassen.
 In Version 2.0 des Contao ThemeManagers wurde die Konfiguration angepasst, sodass die hier dokumentierte Reihenfolge der
 Theme-Konfiguration mit der im Contao-Backend übereinstimmt.
 
-![Backend-Ansicht der Theme Konfiguration](../../../../assets/configuration/1_config.png)
+![Backend-Ansicht der Theme Konfiguration](../../../assets/configuration/1_config.png)
 
 <div class="grid cards" markdown>
 

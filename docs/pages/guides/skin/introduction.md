@@ -14,7 +14,7 @@ Theme-Entwicklung nützlich sein können.
 !!! danger "Der Name `_theme.scss` ist reserviert!"
 
     Deine eingebundene Skin-Datei sollte niemals den Namen `_theme.scss` tragen, da diese für das Contao ThemeManager
-    Framework reserviert ist. Solltest du Teile des Frameworks anpassen wollen, kannst du in [Overrides](override.md)
+    Framework reserviert ist. Solltest du Teile des Frameworks anpassen wollen, kannst du [hier](setup-override.md)
     nachlesen, wie dies funktioniert.
 
 ## Theme-Compiler

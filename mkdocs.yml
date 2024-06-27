@@ -1,28 +1,26 @@
 # Navigation
 nav:
     - Home: index.md
-    - Dokumentation:
-            - pages/docs/introduction/index.md
-            - pages/docs/introduction/version.md
-            - Installation:
-                    - pages/docs/installation/system.md
-                    - pages/docs/installation/install.md
-                    - pages/docs/installation/setup.md
-            - Konfiguration:
-                    - Theme:
-                          - pages/docs/configuration/theme/overview.md
-                          - pages/docs/configuration/theme/global.md
-                          - pages/docs/configuration/theme/fonts.md
-                          - pages/docs/configuration/theme/headings.md
-                          - pages/docs/configuration/theme/buttons.md
-                          - pages/docs/configuration/theme/components.md
-                          - pages/docs/configuration/theme/form.md
-                          - pages/docs/configuration/theme/modules.md
-                          - pages/docs/configuration/theme/header.md
-                          - pages/docs/configuration/theme/miscellaneous.md
-                          - pages/docs/configuration/theme/layout.md
-                    - pages/docs/configuration/icon-set.md
-                    - pages/docs/configuration/backgrounds.md
+    - Installation:
+        - pages/installation/index.md
+        - pages/installation/system.md
+        - pages/installation/install.md
+        - pages/installation/setup.md
+    - Konfiguration:
+        - Theme:
+            - pages/configuration/theme/overview.md
+            - pages/configuration/theme/global.md
+            - pages/configuration/theme/fonts.md
+            - pages/configuration/theme/headings.md
+            - pages/configuration/theme/buttons.md
+            - pages/configuration/theme/components.md
+            - pages/configuration/theme/form.md
+            - pages/configuration/theme/modules.md
+            - pages/configuration/theme/header.md
+            - pages/configuration/theme/miscellaneous.md
+            - pages/configuration/theme/layout.md
+        - pages/configuration/icon-set.md
+        - pages/configuration/backgrounds.md
     - Anleitungen:
           - pages/guides/index.md
           - Demo:

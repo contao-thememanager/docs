@@ -25,12 +25,12 @@ Typische Breakpoints sind beispielsweise für
 definiert, um ein konsistentes und benutzerfreundliches Erlebnis auf unterschiedlichen Geräten zu gewährleisten. Im
 Gegensatz zu anderen CSS-Frameworks legt der ThemeManager auch Wert auf Bildschirme, die über Full HD (1920 x 1080)
 hinausgehen.
-![Breakpoints des ThemeManagers](../../../../assets/configuration/layout/grid-breakpoints.png){loading=lazy}
+![Breakpoints des ThemeManagers](../../../assets/configuration/layout/grid-breakpoints.png){loading=lazy}
 
 Der ThemeManager fügt sechs Breakpoints hinzu, die sich in den StyleManager-Einstellungen als Suffix der Konfigurationen
 widerspiegeln, zum Beispiel `(xs)`.
 
-![Breakpoints im StyleManager](../../../../assets/configuration/layout/stylemanager-breakpoints.png){loading=lazy}
+![Breakpoints im StyleManager](../../../assets/configuration/layout/stylemanager-breakpoints.png){loading=lazy}
 
 | Breakpoint | Bildschirmgröße |                    Geräte |
 |------------|----------------:|--------------------------:|
@@ -110,7 +110,7 @@ Diese Optionen erlauben die Auswahl eines [Breakpoints](#breakpoints) für die V
 und/oder
 rechte Spalte in der gleichen Reihe wie die Hauptspalte angezeigt werden.
 
-![Verhalten des Layouts](../../../../assets/configuration/layout/layout-behavior.png){loading=lazy}
+![Verhalten des Layouts](../../../assets/configuration/layout/layout-behavior.png){loading=lazy}
 
 Über `$layout-column-width-*` können die Breiten für die linke und rechte Spalte eingestellt werden. Mit
 `$layout-column-gutter` wird der Abstand zur Hauptspalte konfiguriert.
@@ -166,7 +166,7 @@ Hälfte des konfigurierten [Grid-Gutter](#grid). Möchte man diesen Abstand verg
 konfiguriert werden.
 
 <figure markdown>
-  ![Äußeres Padding von Artikeln](../../../../assets/configuration/layout/article-outer-padding.png){loading=lazy width="375"}
+  ![Äußeres Padding von Artikeln](../../../assets/configuration/layout/article-outer-padding.png){loading=lazy width="375"}
   <figcaption>Padding am Bildschirmrand</figcaption>
 </figure>
 
@@ -264,7 +264,7 @@ Ein Artikel dient hierbei immer als Grid-Container, der die Ausrichtung der Kind
 kann.
 Inhaltselemente lassen sich in das 12-Spalten-Raster einordnen.
 
-![12er Grid](../../../../assets/configuration/layout/grid-columns-12.png){loading=lazy}
+![12er Grid](../../../assets/configuration/layout/grid-columns-12.png){loading=lazy}
 !!! danger "Spaltenanzahl von 12 ($grid-columns)"
 
     Es wird nicht empfohlen, die Anzahl der Spalten von 12 zu ändern, da die Optionen des StyleManagers nicht

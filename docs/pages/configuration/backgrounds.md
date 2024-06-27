@@ -24,7 +24,7 @@ Hintergrundbildern bedeutet dies, dass jede einzelne CSS-Klasse dem Anwender bek
 Der ThemeManager erweitert eine Option im Dateisystem, sodass Bilder als Hintergrundbild definiert werden können.
 
 <figure markdown>
-  ![Bild als Hintergrund festlegen](../../../assets/configuration/background/file-set-as-background.png){loading=lazy}
+  ![Bild als Hintergrund festlegen](../../assets/configuration/background/file-set-as-background.png){loading=lazy}
   <figcaption>Über die Option kann ein Hintergrundbild festgelegt werden</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ Da das `CSS` für Hintergrundbilder erst generiert werden muss, stehen diese ers
 Verfügung.
 
 <figure markdown>
-  ![Compiler preview](../../../assets/configuration/background/background-compiler.png){loading=lazy}
+  ![Compiler preview](../../assets/configuration/background/background-compiler.png){loading=lazy}
   <figcaption>Der Asset-Compiler listet alle verfügbaren Hintergründe auf</figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ stehen.
 Anwender können die Hintergrundbilder unter dem Reiter Background auswählen. Die Beschriftung der Hintergrundbilder
 im Backend folgt hierbei dem Schema `BG-[Dateiname]`.
 
-![Hintergrund auswählen](../../../assets/configuration/background/style-manager-background-image.png){loading=lazy}
+![Hintergrund auswählen](../../assets/configuration/background/style-manager-background-image.png){loading=lazy}
 
 ### Wo kann ich Hintergrundbilder einstellen?
 
@@ -82,7 +82,7 @@ Der StyleManager ermöglicht es, dass CSS-Klassen an ausgewählten Stellen in ei
 (Template-Variablen).
 
 <figure markdown>
-  ![Global, Component und Element](../../../assets/configuration/background/global-component-element.png){loading=lazy}
+  ![Global, Component und Element](../../assets/configuration/background/global-component-element.png){loading=lazy}
   <figcaption>Hervorhebung der Gruppen anhand einer Bild-Text-Liste. Lila hebt lediglich das gesamte Element (Global) hervor</figcaption>
 </figure>
 
@@ -113,14 +113,14 @@ Der StyleManager ermöglicht es, dass CSS-Klassen an ausgewählten Stellen in ei
 Die im StyleManager verfügbaren Hintergrund-Einstellungen können genutzt werden, um das Verhalten des festgelegten
 Hintergrunds zu beeinflussen.
 
-![Einstellungen im StyleManager](../../../assets/configuration/background/background-settings.png){loading=lazy}
+![Einstellungen im StyleManager](../../assets/configuration/background/background-settings.png){loading=lazy}
 
 Die nachfolgende Tabelle erklärt alle weiteren Optionen, wobei der Standardwert bereits der `Best-Practice` folgt.
 
 | Einstellung         | Standardwert                                                                     | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |---------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Color               | -                                                                                | Hiermit kann eine Hintergrundfarbe ausgewählt werden. Eine Kombination mit transparenten Hintergrundbildern ist möglich.                                                                                                                                                                                                                                                                                                                                             |
-| Image               | [none](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)        | Dient der Auswahl des Hintergrundbildes. Über die Option `none` kann ein über den [Skin](../../guides/skin/introduction.md) gesetztes Hintergrundbild entfernt werden.                                                                                                                                                                                                                                                                                               |
+| Image               | [none](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)        | Dient der Auswahl des Hintergrundbildes. Über die Option `none` kann ein über den [Skin](../guides/skin/introduction.md) gesetztes Hintergrundbild entfernt werden.                                                                                                                                                                                                                                                                                                  |
 | Attachment          | [scroll](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment) | Über diese Einstellung wird das Hintergrundbild in der Position im Browserfenster fixiert, sodass dieses beim Scrollen an der selben Stelle bleibt.                                                                                                                                                                                                                                                                                                                  |
 | Repeat              | [no-repeat](https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat)  | Background-Repeat kann genutzt werden, damit kleine Bilder auf einer großen Fläche wiederholt werden. Wirkt nicht, wenn etwas in `Size` eingestellt wurde.                                                                                                                                                                                                                                                                                                           |
 | Size                | [cover](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)        | Diese Einstellung bestimmt die Größe des eingesetzten Hintergrundbildes.<br><br>Über `contain` wird das Bild so groß wie möglich innerhalb des Containers skaliert, ohne das Bild zu beschneiden oder zu dehnen. Wenn das Bild zu klein für den Container ist, wird das Bild gekachelt, wenn eine Einstellung in `Size` vorgenommen wurde.<br><br>Die Einstellung `auto` skaliert das Bild in der entsprechenden Richtung, sodass die Proportionen erhalten bleiben. |
@@ -172,12 +172,12 @@ wurde eine neue Funktion hinzugefügt, welche in diversen Einstellungen von Hint
 Werden eigene Hintergrundfarben im StyleManager ergänzt, wird ein Platzhalter angezeigt.
 
 <figure markdown>
-  ![Farbvorschau aktivieren](../../../assets/configuration/background/color-preview-setting.png){loading=lazy}
+  ![Farbvorschau aktivieren](../../assets/configuration/background/color-preview-setting.png){loading=lazy}
   <figcaption>Aktivieren der Farbvorschau in den Benutzer-Einstellungen</figcaption>
 </figure>
 
 <figure markdown>
-  ![Farbvorschau in Einstellungen](../../../assets/configuration/background/color-preview.png){loading=lazy}
+  ![Farbvorschau in Einstellungen](../../assets/configuration/background/color-preview.png){loading=lazy}
   <figcaption>Farbvorschau innerhalb der Hintergrundfarben</figcaption>
 </figure>
 

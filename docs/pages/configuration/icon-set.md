@@ -8,7 +8,7 @@ Bei der Verwendung von Icon-Fonts, die über Dienste wie IcoMoon oder Fontello e
 stellt sich oft die Herausforderung, die zugehörigen CSS-Dateien einzubinden und die entsprechenden Klassen in Templates
 oder CSS-Anpassungen für Komponenten zu integrieren.
 
-![Icon in einer Button-Komponente](../../../assets/configuration/icons/component-icon.png){loading=lazy}
+![Icon in einer Button-Komponente](../../assets/configuration/icons/component-icon.png){loading=lazy}
 
 Der Contao ThemeManager ermöglicht es Anwendern, ihr Icon-Set direkt in den Systemeinstellungen auszuwählen. Automatisch
 generiert der ThemeManager das benötigte CSS, und die festgelegten Optionen stehen systemweit im StyleManager zur
@@ -29,7 +29,7 @@ entpackt werden.
 
 Im Download einer IcoMoon-Schriftart befinden sich die benötigten Dateien im Ordner `fonts`:
 
-![IcoMoon Download mit Dateien](../../../assets/configuration/icons/font-files.png){loading=lazy}
+![IcoMoon Download mit Dateien](../../assets/configuration/icons/font-files.png){loading=lazy}
 
 Folgende Dateien müssen in *einen Ordner* abgelegt werden:
 
@@ -39,7 +39,7 @@ Folgende Dateien müssen in *einen Ordner* abgelegt werden:
 Um die Icon-Schriftart einzubinden, muss die `*.svg` unter `System` -> `Einstellungen` unter ThemeManager eingebunden
 werden.
 
-![Icon-Set einstellen](../../../assets/configuration/icons/settings-icon-set.png){loading=lazy}
+![Icon-Set einstellen](../../assets/configuration/icons/settings-icon-set.png){loading=lazy}
 
 !!! tip
 
@@ -49,17 +49,17 @@ werden.
 Nach Kompilieren des Themes stehen die neuen Icons in den Komponenten bereit.
 
 <figure markdown>
-  ![Asset Compiler Report](../../../assets/configuration/icons/maintenance-generated-icon-font.png){loading=lazy}
+  ![Asset Compiler Report](../../assets/configuration/icons/maintenance-generated-icon-font.png){loading=lazy}
   <figcaption>Asset-Compiler Report</figcaption>
 </figure>
 
 <figure markdown>
-  ![Icons innerhalb der Link-Einstellungen](../../../assets/configuration/icons/stylemanager-icon-picker.png){loading=lazy}
+  ![Icons innerhalb der Link-Einstellungen](../../assets/configuration/icons/stylemanager-icon-picker.png){loading=lazy}
   <figcaption>Icons innerhalb der Link-Einstellungen</figcaption>
 </figure>
 
 <figure markdown>
-  ![Icon-Auswahl im RockSolid Icon-Picker](../../../assets/configuration/icons/rocksolid-icon-picker.png){loading=lazy}
+  ![Icon-Auswahl im RockSolid Icon-Picker](../../assets/configuration/icons/rocksolid-icon-picker.png){loading=lazy}
   <figcaption>Icon-Auswahl im RockSolid Icon-Picker</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ Nach Kompilieren des Themes stehen die neuen Icons in den Komponenten bereit.
 
 ### Hinweise und Fehlermeldungen
 
-![Hinweise und Fehlermeldungen im Asset-Compiler](../../../assets/configuration/icons/maintenance-no-icon-font-woff-file.png){loading=lazy}
+![Hinweise und Fehlermeldungen im Asset-Compiler](../../assets/configuration/icons/maintenance-no-icon-font-woff-file.png){loading=lazy}
 
 Folgende Hinweise und Fehlermeldungen können vom Asset-Compiler zurückgegeben werden:
 
@@ -105,7 +105,7 @@ gezogen werden, um die Icons zu laden.
     eine Dokumentation auf [GitHub](https://github.com/fontello/fontello/wiki/Help).
 
 <figure markdown>
-  ![Übersicht der IcoMoon-App](../../../assets/configuration/icons/icoMoon.png){loading=lazy}
+  ![Übersicht der IcoMoon-App](../../assets/configuration/icons/icoMoon.png){loading=lazy}
   <figcaption>Übersicht der IcoMoon-App</figcaption>
 </figure>
 

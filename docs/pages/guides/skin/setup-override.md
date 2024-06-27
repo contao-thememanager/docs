@@ -10,11 +10,11 @@ eingestellten Variablen in deinen SCSS-Dateien verwendet werden können.
 ausgetauscht werden können.
 
 Jede SCSS-Datei, welche über Theme-Quelldateien eingebunden wird, kann auf alle Variablen der
-[Theme-Konfiguration](../../docs/configuration/theme/overview.md) zugreifen.
+[Theme-Konfiguration](../../configuration/theme/overview.md) zugreifen.
 
 ## Dein eigener Skin / Einbinden eigener SCSS-Dateien
 
-Nachdem du die [Einrichtung](../../docs/installation/setup.md) durchgeführt hast, kannst du in einem Theme deine
+Nachdem du die [Einrichtung](../../installation/setup.md) durchgeführt hast, kannst du in einem Theme deine
 _Theme-Quelldateien_ einbinden. Für jede Quelldatei wird eine `*.css`-Datei mit selbem Namen abgelegt.
 
 !!! info "Dateien im Layout einbinden"

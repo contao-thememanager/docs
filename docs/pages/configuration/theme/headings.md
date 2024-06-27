@@ -250,7 +250,7 @@ In den nachfolgenden Abschnitten werden die nachfolgenden Einstellungen beschrie
 Wenn das [Global Spacing](#global-spacing-automatisch) nicht aktiviert wird, gelten folgende Regeln für den unteren
 Abstand (*Margin*) für Überschriften:
 
-![Headline Spacing normal](../../../../assets/configuration/headline/headline-spacing.png){loading=lazy}
+![Headline Spacing normal](../../../assets/configuration/headline/headline-spacing.png){loading=lazy}
 
 | Breakpoints           | Small                      | Medium                       | Large                        |
 |-----------------------|----------------------------|------------------------------|------------------------------|
@@ -280,7 +280,7 @@ Abstand (*Margin*) für Überschriften:
 dies oft die einzig notwendige Einstellung ist. Die nachfolgende Tabelle zeigt an, welche der Config-Variablen genutzt
 wird.
 
-![Headline Spacing global](../../../../assets/configuration/headline/headline-spacing-global.png){loading=lazy}
+![Headline Spacing global](../../../assets/configuration/headline/headline-spacing-global.png){loading=lazy}
 
 | Breakpoints                              | Small                       | Medium                       | Large                        |
 |------------------------------------------|-----------------------------|------------------------------|------------------------------|
