@@ -1,5 +1,5 @@
 ---
-title: Konfiguration & Überschreiben
+title: CSS-Konfiguration & Überschreiben
 ---
 
 # Konfiguration des eigenen Skins und Überschreiben von vorhandenen Bestandteilen

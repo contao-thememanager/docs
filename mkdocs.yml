@@ -31,6 +31,9 @@ nav:
           - Skin:
               - pages/guides/skin/introduction.md
               - pages/guides/skin/setup-override.md
+          - Konfiguration:
+              - pages/guides/configuration/config.md
+              - pages/guides/configuration/stylemanager.md
 
 #    - Erweiterung:
 #          - pages/extensions/index.md
