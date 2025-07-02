@@ -1,0 +1,2529 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Contao ThemeManager Dokumentation">
+      
+      
+        <meta name="author" content="co-authored by Daniele Sciannimanica, Sebastian Zoglowek">
+      
+      
+        <link rel="canonical" href="https://contao-thememanager.github.io/docs/pages/configuration/theme/layout/">
+      
+      
+        <link rel="prev" href="../miscellaneous/">
+      
+      
+        <link rel="next" href="../../icon-set/">
+      
+      
+      <link rel="icon" href="../../../../assets/logo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Layout - Contao ThemeManager</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#layout" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="../../../.." title="Contao ThemeManager" class="md-header__button md-logo" aria-label="Contao ThemeManager" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Contao ThemeManager
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Layout
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/contao-thememanager/core" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    contao-thememanager/core
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Hauptnavigation" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../installation/" class="md-tabs__link">
+          
+  
+  
+  Installation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
+          
+  
+  
+  Konfiguration
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../guides/" class="md-tabs__link">
+          
+  
+  
+  Anleitungen
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Contao ThemeManager" class="md-nav__button md-logo" aria-label="Contao ThemeManager" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.svg" alt="logo">
+
+    </a>
+    Contao ThemeManager
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/contao-thememanager/core" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    contao-thememanager/core
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../installation/system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Systemanforderungen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../installation/install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../installation/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ersteinrichtung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Konfiguration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Konfiguration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Theme
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Theme
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.75 5.5h11.5a.75.75 0 0 1 0 1.5H8.75a.75.75 0 0 1 0-1.5m0 6h11.5a.75.75 0 0 1 0 1.5H8.75a.75.75 0 0 1 0-1.5m0 6h11.5a.75.75 0 0 1 0 1.5H8.75a.75.75 0 0 1 0-1.5M5 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0M4 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2m0 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg>
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../global/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1m3.241 10.5zc-.1-2.708-.992-4.904-1.89-6.452a14 14 0 0 0-1.304-1.88L12 3.11l-.047.059c-.354.425-.828 1.06-1.304 1.88-.898 1.547-1.79 3.743-1.89 6.451Zm-12.728 0h4.745c.1-3.037 1.1-5.49 2.093-7.204.39-.672.78-1.233 1.119-1.673C6.11 3.329 2.746 7 2.513 11.5m18.974 0C21.254 7 17.89 3.329 13.53 2.623c.339.44.729 1.001 1.119 1.673.993 1.714 1.993 4.167 2.093 7.204ZM8.787 13c.182 2.478 1.02 4.5 1.862 5.953q.574.993 1.304 1.88l.047.057.047-.059c.354-.425.828-1.06 1.304-1.88.842-1.451 1.679-3.471 1.862-5.951Zm-1.504 0H2.552a9.505 9.505 0 0 0 7.918 8.377 16 16 0 0 1-1.119-1.673C8.413 18.085 7.47 15.807 7.283 13m9.434 0c-.186 2.807-1.13 5.085-2.068 6.704-.39.672-.78 1.233-1.118 1.673A9.506 9.506 0 0 0 21.447 13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Global
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fonts/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.414 15H3.586l-1.631 4.505a.75.75 0 1 1-1.41-.51l5.08-14.03a1.463 1.463 0 0 1 2.75 0l5.08 14.03a.75.75 0 1 1-1.411.51Zm4.532-5.098c.913-1.683 2.703-2.205 4.284-2.205 1.047 0 2.084.312 2.878.885.801.577 1.392 1.455 1.392 2.548v8.12a.75.75 0 0 1-1.5 0v-.06l-.044.025c-.893.52-2.096.785-3.451.785-1.051 0-2.048-.315-2.795-.948-.76-.643-1.217-1.578-1.217-2.702 0-.919.349-1.861 1.168-2.563.81-.694 2-1.087 3.569-1.087H22v-1.57c0-.503-.263-.967-.769-1.332-.513-.37-1.235-.6-2.001-.6-1.319 0-2.429.43-2.966 1.42a.75.75 0 0 1-1.318-.716M9.87 13.5 7 5.572 4.13 13.5Zm12.13.7h-2.77c-1.331 0-2.134.333-2.593.726a1.82 1.82 0 0 0-.644 1.424c0 .689.267 1.203.686 1.557.43.365 1.065.593 1.826.593 1.183 0 2.102-.235 2.697-.581.582-.34.798-.74.798-1.134Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Schriften
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../headings/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.25 4a.75.75 0 0 1 .75.75V11h10V4.75a.75.75 0 0 1 1.5 0v14.5a.75.75 0 0 1-1.5 0V12.5H7v6.75a.75.75 0 0 1-1.5 0V4.75A.75.75 0 0 1 6.25 4"/></svg>
+  
+  <span class="md-ellipsis">
+    Überschriften
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../buttons/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.1 15.3c-.1.1-.3.2-.4.3l-2.4.4 1.7 3.6c.2.4 0 .8-.4 1l-2.8 1.3c-.1.1-.2.1-.3.1-.3 0-.6-.2-.7-.4L11.2 18l-1.9 1.5c-.1.1-.3.2-.5.2-.4 0-.8-.3-.8-.8V7.5c0-.5.3-.8.8-.8.2 0 .4.1.5.2l8.7 7.4c.3.2.4.7.1 1M6 12H4V4h16v8h-1.6l2.2 1.9c.8-.3 1.3-1 1.3-1.9V4c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h2z"/></svg>
+  
+  <span class="md-ellipsis">
+    Buttons
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3.75C2 2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 20.25 22H3.75A1.75 1.75 0 0 1 2 20.25ZM9 9v11.5h11.25a.25.25 0 0 0 .25-.25V9Zm11.5-1.5V3.75a.25.25 0 0 0-.25-.25H9v4ZM3.5 9v11.25c0 .138.112.25.25.25H7.5V9Zm4-1.5v-4H3.75a.25.25 0 0 0-.25.25V7.5Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Komponenten
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../form/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7h5v10h-5v2a1 1 0 0 0 1 1h2v2h-2.5c-.55 0-1.5-.45-1.5-1 0 .55-.95 1-1.5 1H12v-2h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-2V2h2.5c.55 0 1.5.45 1.5 1 0-.55.95-1 1.5-1H20v2h-2a1 1 0 0 0-1 1zM2 7h11v2H4v6h9v2H2zm18 8V9h-3v6z"/></svg>
+  
+  <span class="md-ellipsis">
+    Formular
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.27 6.73-4.24 10.13-1.32-3.42-.32-.83-.82-.32-3.43-1.33zM21 3 3 10.53v.97l6.84 2.66L12.5 21h.96z"/></svg>
+  
+  <span class="md-ellipsis">
+    Module
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../header/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v4h12V4z"/></svg>
+  
+  <span class="md-ellipsis">
+    Header
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../miscellaneous/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 4a2 2 0 0 1 2-2h3v2H4v3H2zm20 0v3h-2V4h-3V2h3a2 2 0 0 1 2 2m-2 16v-3h2v3a2 2 0 0 1-2 2h-3v-2zM2 20v-3h2v3h3v2H4a2 2 0 0 1-2-2m8-18h4v2h-4zm0 18h4v2h-4zm10-10h2v4h-2zM2 10h2v4H2z"/></svg>
+  
+  <span class="md-ellipsis">
+    Sonstiges
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 21h8v-8H3m2 2h4v4H5m-2-8h8V3H3m2 2h4v4H5m8-6v8h8V3m-2 6h-4V5h4m-1 11h3v2h-3v3h-2v-3h-3v-2h3v-3h2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Layout
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 21h8v-8H3m2 2h4v4H5m-2-8h8V3H3m2 2h4v4H5m8-6v8h8V3m-2 6h-4V5h4m-1 11h3v2h-3v3h-2v-3h-3v-2h3v-3h2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Layout
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breakpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Breakpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#media-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media queries
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verhalten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verhalten
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Verhalten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verhaltensanderung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verhaltensänderung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artikel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Artikel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Artikel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#horizontale-breite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontale Breite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontaler-abstand-zum-bildschirmrand" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontaler Abstand zum Bildschirmrand
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertikaler-abstand" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertikaler Abstand
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#artikel-hohen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Artikel-Höhen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grid
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exkurs-list-grid-list-und-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exkurs: List (Grid-List) und Alignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exkurs-columns-order-und-offset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exkurs: Columns, Order und Offset
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abstande-innen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abstände (Innen)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Abstände (Innen)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paragraphen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paragraphen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#element-spacing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Element-Spacing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertikales-padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertikales Padding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontales-padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontales Padding
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abstande-auen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abstände (Außen)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Abstände (Außen)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertikales-margin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertikales Margin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontales-margin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontales Margin
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bild-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bild-Text
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../icon-set/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Icon-Set
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backgrounds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hintergründe
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Anleitungen
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Anleitungen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Anleitungen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Demo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Demo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_1" id="__nav_4_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/demo/product-installer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Product Installer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/demo/contao-manager-theme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contao Manager Theme
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/demo/contao-manager-artefakt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contao Manager Artefakt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Skin
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Skin
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/skin/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Einleitung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/skin/setup-override/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS-Konfiguration & Überschreiben
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Konfiguration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Konfiguration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/configuration/config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    config.yaml
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/configuration/stylemanager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    StyleManager
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breakpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Breakpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#media-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media queries
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verhalten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verhalten
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Verhalten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verhaltensanderung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verhaltensänderung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artikel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Artikel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Artikel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#horizontale-breite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontale Breite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontaler-abstand-zum-bildschirmrand" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontaler Abstand zum Bildschirmrand
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertikaler-abstand" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertikaler Abstand
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#artikel-hohen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Artikel-Höhen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grid
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exkurs-list-grid-list-und-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exkurs: List (Grid-List) und Alignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exkurs-columns-order-und-offset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exkurs: Columns, Order und Offset
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abstande-innen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abstände (Innen)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Abstände (Innen)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paragraphen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paragraphen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#element-spacing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Element-Spacing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertikales-padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertikales Padding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontales-padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontales Padding
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abstande-auen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abstände (Außen)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Abstände (Außen)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertikales-margin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertikales Margin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontales-margin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontales Margin
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bild-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bild-Text
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/contao-thememanager/docs/edit/main/docs/pages/configuration/theme/layout.md" title="Seite editieren" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/contao-thememanager/docs/raw/main/docs/pages/configuration/theme/layout.md" title="Quellcode der Seite anzeigen" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="layout">Layout<a class="headerlink" href="#layout" title="Permanent link">&para;</a></h1>
+<p>Die nachfolgenden Kapitel beschreiben Einstellungen, welche Auswirkungen auf das visuelle Verhalten der Website haben.</p>
+<hr />
+<h2 id="breakpoints">Breakpoints<a class="headerlink" href="#breakpoints" title="Permanent link">&para;</a></h2>
+<p><code>$breakpoints</code></p>
+<p>Breakpoints werden verwendet, um das Layout einer Website auf verschiedene Bildschirmbreiten anzupassen, was als
+<a href="https://de.wikipedia.org/wiki/Responsive_Webdesign">Responsive Webdesign</a> bezeichnet wird. Dadurch kann das
+Erscheinungsbild je nach Gerät oder Fenstergröße optimiert werden.</p>
+<p>Typische Breakpoints sind beispielsweise für</p>
+<ul>
+<li>Smartphones (kleine Bildschirme)</li>
+<li>Tablets (mittelgroße Bildschirme)</li>
+<li>Desktops (große Bildschirme)</li>
+</ul>
+<p>definiert, um ein konsistentes und benutzerfreundliches Erlebnis auf unterschiedlichen Geräten zu gewährleisten. Im
+Gegensatz zu anderen CSS-Frameworks legt der ThemeManager auch Wert auf Bildschirme, die über Full HD (1920 x 1080)
+hinausgehen.
+<a class="glightbox" href="../../../../assets/configuration/layout/grid-breakpoints.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Breakpoints des ThemeManagers" loading="lazy" src="../../../../assets/configuration/layout/grid-breakpoints.png" /></a></p>
+<p>Der ThemeManager fügt sechs Breakpoints hinzu, die sich in den StyleManager-Einstellungen als Suffix der Konfigurationen
+widerspiegeln, zum Beispiel <code>(xs)</code>.</p>
+<p><a class="glightbox" href="../../../../assets/configuration/layout/stylemanager-breakpoints.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Breakpoints im StyleManager" loading="lazy" src="../../../../assets/configuration/layout/stylemanager-breakpoints.png" /></a></p>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th style="text-align: right;">Bildschirmgröße</th>
+<th style="text-align: right;">Geräte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td style="text-align: right;">&lt;600px</td>
+<td style="text-align: right;">Smartphones (portrait)</td>
+</tr>
+<tr>
+<td>xs</td>
+<td style="text-align: right;">≥600px</td>
+<td style="text-align: right;">Smartphones (landscape)</td>
+</tr>
+<tr>
+<td>s</td>
+<td style="text-align: right;">≥768px</td>
+<td style="text-align: right;">kleine Tablets (portrait)</td>
+</tr>
+<tr>
+<td>m</td>
+<td style="text-align: right;">≥1024px</td>
+<td style="text-align: right;">Tablets (portrait)</td>
+</tr>
+<tr>
+<td>l</td>
+<td style="text-align: right;">≥1264px</td>
+<td style="text-align: right;">Desktop (1080p)</td>
+</tr>
+<tr>
+<td>xl</td>
+<td style="text-align: right;">≥1921px</td>
+<td style="text-align: right;">Desktop (1440p, 4k)</td>
+</tr>
+</tbody>
+</table>
+<p>Jeder Breakpoint kann individuell angepasst werden, der Name kann aber nicht geändert werden.</p>
+<details class="example" open="open">
+<summary>Verfügbare (S)CSS-Variablen</summary>
+<p><div class="grid" markdown>
+<div class="language-scss highlight"><span class="filename">SCSS</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nv">$breakpoints</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="n">xs</span><span class="o">:</span><span class="w"> </span><span class="mi">600</span><span class="kt">px</span><span class="o">,</span><span class="w">  </span><span class="c1">// 37.5rem</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="n">s</span><span class="o">:</span><span class="w">  </span><span class="mi">768</span><span class="kt">px</span><span class="o">,</span><span class="w">  </span><span class="c1">// 48rem</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="n">m</span><span class="o">:</span><span class="w">  </span><span class="mi">1024</span><span class="kt">px</span><span class="o">,</span><span class="w"> </span><span class="c1">// 64rem</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="n">l</span><span class="o">:</span><span class="w">  </span><span class="mi">1264</span><span class="kt">px</span><span class="o">,</span><span class="w"> </span><span class="c1">// 79rem</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="n">xl</span><span class="o">:</span><span class="w"> </span><span class="mi">1921</span><span class="kt">px</span><span class="w">  </span><span class="c1">// 120rem</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-css highlight"><span class="filename">CSS</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c">/* Zu erwähnen ist, dass Custom properties</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c">nicht in Media queries funktionieren */</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nt">var</span><span class="o">(</span><span class="nt">--bp-xs</span><span class="o">)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nt">var</span><span class="o">(</span><span class="nt">--bp-s</span><span class="o">)</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nt">var</span><span class="o">(</span><span class="nt">--bp-m</span><span class="o">)</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nt">var</span><span class="o">(</span><span class="nt">--bp-l</span><span class="o">)</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nt">var</span><span class="o">(</span><span class="nt">--bp-xl</span><span class="o">)</span>
+</span></code></pre></div></p>
+</div>
+</details>
+<h3 id="media-queries">Media queries<a class="headerlink" href="#media-queries" title="Permanent link">&para;</a></h3>
+<p>Sofern der Skin mit <a href="https://sass-lang.com/guide/">SCSS</a> geschrieben und im Theme eingebunden wird, können mit den
+folgenden Mixins auf die
+Breakpoints zugegriffen werden:</p>
+<details class="example" open="open">
+<summary>Verfügbare SCSS-Mixins</summary>
+<p><div class="language-scss highlight"><span class="filename">Min width</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">@include</span><span class="nd"> media-breakpoint</span><span class="p">(</span><span class="s1">&#39;xs&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nc">...</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// @media (min-width: 600px)  { ... }</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">@include</span><span class="nd"> media-breakpoint</span><span class="p">(</span><span class="s1">&#39;s&#39;</span><span class="p">)</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nc">...</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// @media (min-width: 768px)  { ... }</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">@include</span><span class="nd"> media-breakpoint</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">)</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nc">...</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// @media (min-width: 1024px) { ... }</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">@include</span><span class="nd"> media-breakpoint</span><span class="p">(</span><span class="s1">&#39;l&#39;</span><span class="p">)</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nc">...</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// @media (min-width: 1264px) { ... }</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">@include</span><span class="nd"> media-breakpoint</span><span class="p">(</span><span class="s1">&#39;xl&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nc">...</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// @media (min-width: 1921px) { ... }</span>
+</span></code></pre></div>
+<div class="language-scss highlight"><span class="filename">Max width</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">@include</span><span class="nd"> max-breakpoint</span><span class="p">(</span><span class="s1">&#39;xs&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nc">...</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// @media (max-width: 599.98px)  { ... }</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">@include</span><span class="nd"> max-breakpoint</span><span class="p">(</span><span class="s1">&#39;s&#39;</span><span class="p">)</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nc">...</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// @media (max-width: 767.98px)  { ... }</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">@include</span><span class="nd"> max-breakpoint</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">)</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nc">...</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// @media (max-width: 1023.98px) { ... }</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">@include</span><span class="nd"> max-breakpoint</span><span class="p">(</span><span class="s1">&#39;l&#39;</span><span class="p">)</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nc">...</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// @media (max-width: 1263.98px) { ... }</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">@include</span><span class="nd"> max-breakpoint</span><span class="p">(</span><span class="s1">&#39;xl&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nc">...</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// @media (max-width: 1920.98px) { ... }</span>
+</span></code></pre></div></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Mehr zu der Subtraktion von 0.02px kann hier gefunden werden: <a href="https://www.w3.org/TR/mediaqueries-4/#mq-min-max">https://www.w3.org/TR/mediaqueries-4/#mq-min-max</a></p>
+</div>
+</details>
+<hr />
+<h2 id="verhalten">Verhalten<a class="headerlink" href="#verhalten" title="Permanent link">&para;</a></h2>
+<p>Die Einstellungen dieser Kategorie beeinflussen das Verhalten des
+<a href="../../../installation/setup/#mehrspaltiges-layout-hauptspalte-linke-spalte-rechte-spalte">mehrspaltigen Layouts</a> und ermöglichen dabei drei einstellbare Breiten
+(small, medium, large) für die linke und/oder rechte Spalte.</p>
+<h3 id="verhaltensanderung">Verhaltensänderung<a class="headerlink" href="#verhaltensanderung" title="Permanent link">&para;</a></h3>
+<p><code>$layout-column-[small|medium|large]-break</code> <code>$layout-column-width-*</code> <code>$layout-column-gutter-*</code></p>
+<p>Diese Optionen erlauben die Auswahl eines <a href="#breakpoints">Breakpoints</a> für die Verhaltensänderung, bei welcher die linke
+und/oder
+rechte Spalte in der gleichen Reihe wie die Hauptspalte angezeigt werden.</p>
+<p><a class="glightbox" href="../../../../assets/configuration/layout/layout-behavior.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Verhalten des Layouts" loading="lazy" src="../../../../assets/configuration/layout/layout-behavior.png" /></a></p>
+<p>Über <code>$layout-column-width-*</code> können die Breiten für die linke und rechte Spalte eingestellt werden. Mit
+<code>$layout-column-gutter</code> wird der Abstand zur Hauptspalte konfiguriert.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Sofern nur eine oder zwei Breakpoints gewünscht sind, kann das kleinere <code>$layout-column-[]-break</code> auf die gleiche
+Einstellung wie die des nachfolgenden eingestellt werden.</p>
+</div>
+<hr />
+<h2 id="artikel">Artikel<a class="headerlink" href="#artikel" title="Permanent link">&para;</a></h2>
+<h3 id="horizontale-breite">Horizontale Breite<a class="headerlink" href="#horizontale-breite" title="Permanent link">&para;</a></h3>
+<p><code>$x-spacing-large-m</code> <code>$x-spacing-large-l</code> <code>$x-spacing-small</code></p>
+<p>Die horizontale Breite kontrolliert die Breite des Inhalts von Artikeln, um sicherzustellen, dass der Inhalt auf großen
+Bildschirmen nicht übermäßig gedehnt wird. Dies dient dem Lesefluss und verhindert schlechten Fokus, indem eine
+angemessene Begrenzung für die Breite des sichtbaren Inhalts festgelegt wird.</p>
+<p>In Artikeln kann die Breite dieser unter <code>Component &gt; Article-Spacing &gt; Left-Right-Spacing</code> eingestellt werden. Die
+Einstellungen greifen hier bei folgenden Bildschirmbreiten bzw.
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries">Media-Queries</a>:</p>
+<table>
+<thead>
+<tr>
+<th>Left-Right-Spacing</th>
+<th>Media-Query</th>
+<th>Variable</th>
+<th>CSS-Klasse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small</td>
+<td>Wert in <code>$x-spacing-small</code></td>
+<td><code>$x-spacing-small</code></td>
+<td><code>.art-px-1</code></td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>Breakpoint <code>l</code></td>
+<td><code>$x-spacing-large-l</code></td>
+<td><code>.art-px-2</code></td>
+</tr>
+<tr>
+<td>Large</td>
+<td>Breakpoint <code>m</code></td>
+<td><code>$x-spacing-large-m</code></td>
+<td><code>.art-px-3</code></td>
+</tr>
+</tbody>
+</table>
+<details class="example">
+<summary>Verfügbare (S)CSS-Variablen</summary>
+<p><div class="grid" markdown>
+<div class="language-scss highlight"><span class="filename">SCSS</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="err">$</span><span class="nt">x-spacing-small</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="err">$</span><span class="nt">x-spacing-large-l</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="err">$</span><span class="nt">x-spacing-large-m</span>
+</span></code></pre></div>
+<div class="language-css highlight"><span class="filename">CSS</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c">/* Die Artikelbreite kann durch folgende</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c">custom property gesetzt werden: */</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nt">var</span><span class="o">(</span><span class="nt">--art-wdth</span><span class="o">)</span>
+</span></code></pre></div>
+</div></p>
+</details>
+<h3 id="horizontaler-abstand-zum-bildschirmrand">Horizontaler Abstand zum Bildschirmrand<a class="headerlink" href="#horizontaler-abstand-zum-bildschirmrand" title="Permanent link">&para;</a></h3>
+<p><code>$article-outer-padding</code></p>
+<p>Ist kein anderes Gutter im Artikel eingestellt, so ist der Abstand zum Bildschirmrand auf mobilen Endgeräten immer die
+Hälfte des konfigurierten <a href="#grid">Grid-Gutter</a>. Möchte man diesen Abstand vergrößern, so kann ein zusätzlicher Abstand
+konfiguriert werden.</p>
+<figure>
+<p><a class="glightbox" href="../../../../assets/configuration/layout/article-outer-padding.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Äußeres Padding von Artikeln" loading="lazy" src="../../../../assets/configuration/layout/article-outer-padding.png" width="375" /></a>
+  </p>
+<figcaption>Padding am Bildschirmrand</figcaption>
+</figure>
+<p>Da ab bestimmten Auflösungen die Artikelbreite agiert, verhält sich das <code>$outer-padding</code> wie der Tabelle zu entnehmen.</p>
+<table>
+<thead>
+<tr>
+<th>Breakpoints</th>
+<th style="text-align: right;">Fensterbreite</th>
+<th style="text-align: right;">Padding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kleiner <strong><code>xs</code></strong></td>
+<td style="text-align: right;"><code>&lt;600px</code></td>
+<td style="text-align: right;"><strong><code>$article-outer-padding</code></strong></td>
+</tr>
+<tr>
+<td><strong><code>xs</code></strong> bis  <strong><code>s</code></strong></td>
+<td style="text-align: right;"><code>600px - 1023.98px</code></td>
+<td style="text-align: right;"><strong><code>$article-outer-padding-xs</code></strong></td>
+</tr>
+<tr>
+<td><strong><code>s</code></strong> bis  <strong><code>m</code></strong></td>
+<td style="text-align: right;"><code>600px - 1023.98px</code></td>
+<td style="text-align: right;"><strong><code>$article-outer-padding-s</code></strong></td>
+</tr>
+<tr>
+<td>ab <strong><code>m</code></strong></td>
+<td style="text-align: right;"><code>≥1024px</code></td>
+<td style="text-align: right;"><strong><code>0</code></strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Der äußere Abstand greift nur, wenn eine horizontale Breite im Artikel eingestellt wurde.</p>
+</div>
+<h3 id="vertikaler-abstand">Vertikaler Abstand<a class="headerlink" href="#vertikaler-abstand" title="Permanent link">&para;</a></h3>
+<p><code>$article-spacing-*</code> <code>$article-main-spacing-bottom</code></p>
+<p>Um Artikel optisch voneinander zu trennen, können in den StyleManager-Optionen die Abstände unter <code>Article-Spacing</code>
+ausgewählt werden.</p>
+<p>Folgende Konfigurationen können über alle Breakpoints vorgenommen werden und beeinflussen den
+inneren Abstand (<code>padding</code>) von Artikeln.</p>
+<table>
+<thead>
+<tr>
+<th>Top-Bottom-Spacing</th>
+<th>Media-Query</th>
+<th>CSS-Klasse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small</td>
+<td>Wert in <code>$x-spacing-small</code></td>
+<td><code>.art-py-1</code></td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>Breakpoint <code>l</code></td>
+<td><code>.art-py-2</code></td>
+</tr>
+<tr>
+<td>Large</td>
+<td>Breakpoint <code>m</code></td>
+<td><code>.art-py-3</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Article-Spacing für mobile Endgeräte</p>
+<p>Die mit dem Präfix <code>$article-spacing-xs-*</code> versehenen Variablen gelten auch für Bildschirmbreiten <code>&lt;600px</code>.</p>
+</div>
+<h3 id="artikel-hohen">Artikel-Höhen<a class="headerlink" href="#artikel-hohen" title="Permanent link">&para;</a></h3>
+<p><code>$article-options-vheight</code> <code>$article-options-height</code></p>
+<p>Möchte man Vollbild-Artikel erstellen, sodass diese den gesamten Bildschirm ausfüllen, kommt man um
+<a href="https://web.dev/blog/viewport-units?hl=de">Viewport-Höhen</a> nicht herum.</p>
+<p>Mithilfe der Variable <code>$article-min-vheight</code> lassen sich mehrere <code>vh</code> Höhen generieren, welche in Artikeln unter
+<code>Component &gt; Height</code> ausgewählt werden können. Das generierte CSS wird als Custom Property bereitgestellt und
+beeinflusst die Höhe von Artikeln über:</p>
+<div class="language-css highlight"><span class="filename">CSS</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">.</span><span class="nc">mod_article</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="p">.</span><span class="nc">inside</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="k">min-height</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--art-hght</span><span class="p">)</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Im <a href="../header/#exkurs-artikel-höhe-und-kopfzeilen-höhe">Exkurs: Artikel-Höhe und Kopfzeilen-Höhe</a> gibt es mehr
+Informationen zur Artikel-Höhe.</p>
+</div>
+<p>Über <code>$article-options-height</code> können zusätzliche Höhen kommasepariert mit einer Einheit eingetragen werden, sodass auch
+feste Höhen generiert werden können.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>500px,800px,40rem
+</span></code></pre></div>
+<p>Nach dem Kompilieren stehen hierbei folgende Klassen zur Verfügung, welche über die angegebenen Optionen erstellt
+werden.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th style="text-align: right;">Wert</th>
+<th style="text-align: right;">CSS-Klasse</th>
+<th style="text-align: right;">CSS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$article-options-vheight</code></td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;"><code>.a-vh-50</code></td>
+<td style="text-align: right;"><code>--art-hght: 50dvh</code></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;"><code>.a-vh-75</code></td>
+<td style="text-align: right;"><code>--art-hght: 75dvh</code></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;"><code>.a-vh-100</code></td>
+<td style="text-align: right;"><code>--art-hght: 100dvh</code></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td><code>$article-options-height</code></td>
+<td style="text-align: right;">500px</td>
+<td style="text-align: right;"><code>.a-h-500px</code></td>
+<td style="text-align: right;"><code>--art-hght: 500px</code></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: right;">40rem</td>
+<td style="text-align: right;"><code>.a-h-40rem</code></td>
+<td style="text-align: right;"><code>--art-hght: 40rem</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition abstract">
+<p class="admonition-title">Dynamische Variablen</p>
+<p>Dynamische Einstellungen stehen erst nach <code>Speichern &amp; Kompilieren</code> zur Verfügung, da die neuen Optionen sowohl in
+den Style-Sheet-Dateien als auch in den dynamischen Style-Manager-Optionen (templates/style-manager-tm.xml)
+hinterlegt werden.</p>
+</div>
+<hr />
+<h2 id="grid">Grid<a class="headerlink" href="#grid" title="Permanent link">&para;</a></h2>
+<p><code>$grid-columns</code> <code>$grid-gutter-width</code> <code>$grid-gutter-bottom</code></p>
+<p>Das CSS-Framework des Contao ThemeManagers verwendet ein
+<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a>-basiertes 12-Spalten-Grid-System, in das sich die
+Inhaltselemente in Artikeln einordnen lassen.</p>
+<p>Ein Artikel dient hierbei immer als Grid-Container, der die Ausrichtung der Kind-Elemente (Inhaltselemente) steuern
+kann.
+Inhaltselemente lassen sich in das 12-Spalten-Raster einordnen.</p>
+<p><a class="glightbox" href="../../../../assets/configuration/layout/grid-columns-12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="12er Grid" loading="lazy" src="../../../../assets/configuration/layout/grid-columns-12.png" /></a></p>
+<div class="admonition danger">
+<p class="admonition-title">Spaltenanzahl von 12 ($grid-columns)</p>
+<p>Es wird nicht empfohlen, die Anzahl der Spalten von 12 zu ändern, da die Optionen des StyleManagers nicht
+aktualisiert werden!</p>
+</div>
+<p>Die Breite zwischen den Spalten lässt sich über <code>$grid-gutter-width</code>, der Abstand nach unten über <code>$grid-gutter-bottom</code>
+einstellen. Die Optionen finden sich als <em>Gutter</em> in den Style-Manager Optionen wieder.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Die hier vorgenommene Konfiguration hat auch Auswirkungen auf das <code>Gutter: small</code>, welches die Hälfte der hier
+eingestellten Werte beträgt.</p>
+</div>
+<p><strong>Grid-Klassen</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Breakpoint<br>Auflösung</th>
+<th style="text-align: right;"><strong>~</strong><br>&lt;600px</th>
+<th style="text-align: right;"><strong>xs</strong><br>≥600px</th>
+<th style="text-align: right;"><strong>s</strong><br>≥768px</th>
+<th style="text-align: right;"><strong>m</strong><br>≥1024px</th>
+<th style="text-align: right;"><strong>l</strong><br>≥1264px</th>
+<th style="text-align: right;"><strong>xl</strong><br>≥1921px</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Klasse</td>
+<td style="text-align: right;"><code>.col-*</code></td>
+<td style="text-align: right;"><code>.col-xs-*</code></td>
+<td style="text-align: right;"><code>.col-s-*</code></td>
+<td style="text-align: right;"><code>.col-m-*</code></td>
+<td style="text-align: right;"><code>.col-l-*</code></td>
+<td style="text-align: right;"><code>.col-xl-*</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">Anzahl<br>Spalten</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">12<br><em>($grid-columns)</em></td>
+</tr>
+</tbody>
+</table>
+<details class="example">
+<summary>Verfügbare (S)CSS-Variablen</summary>
+<p><div class="grid" markdown>
+<div class="language-scss highlight"><span class="filename">SCSS</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// Spalten</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="err">$</span><span class="nt">grid-columns</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="o">//</span><span class="w"> </span><span class="nt">Gutter</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="err">$</span><span class="nt">grid-gutter-width</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="err">$</span><span class="nt">grid-gutter-bottom</span>
+</span></code></pre></div>
+<div class="language-css highlight"><span class="filename">CSS</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c">/* Spalten */</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nt">var</span><span class="o">(</span><span class="nt">--columns</span><span class="o">)</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c">/* Gutter */</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="nt">var</span><span class="o">(</span><span class="nt">--gtr</span><span class="o">)</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="nt">var</span><span class="o">(</span><span class="nt">--gtr-btm</span><span class="o">)</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="c">/* Hälfte des Gutters (Wird verwendet</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="c">   für Padding nach links/rechts) */</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="nt">var</span><span class="o">(</span><span class="nt">--gtr-half</span><span class="o">)</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="c">/* Small gutter */</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="nt">var</span><span class="o">(</span><span class="nt">--gtr-half-sml</span><span class="o">)</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="nt">var</span><span class="o">(</span><span class="nt">--gtr-half-btm</span><span class="o">)</span>
+</span></code></pre></div>
+</div></p>
+</details>
+<h3 id="exkurs-list-grid-list-und-alignment">Exkurs: List (Grid-List) und Alignment<a class="headerlink" href="#exkurs-list-grid-list-und-alignment" title="Permanent link">&para;</a></h3>
+<p><strong>List</strong></p>
+<p>Unterschiedlich der Spaltenbreite in Artikeln und Inhaltselementen, kann die in Listen-Elementen verfügbare
+StyleManager-Einstellung <code>Element &gt; List</code> genutzt werden, um die Kind-Elemente gleichmäßig in einer Reihe zu verteilen.</p>
+<p>Ist <code>Columns</code> auf <code>3 Columns</code> eingestellt, so werden pro Reihe drei Elemente angezeigt, weitere Elemente rutschen in die
+nächste Reihe.</p>
+<p><strong>Horizontales und Vertikales Alignment</strong></p>
+<p><strong>Vertikales Alignment</strong></p>
+<h3 id="exkurs-columns-order-und-offset">Exkurs: Columns, Order und Offset<a class="headerlink" href="#exkurs-columns-order-und-offset" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="abstande-innen">Abstände (Innen)<a class="headerlink" href="#abstande-innen" title="Permanent link">&para;</a></h2>
+<h3 id="paragraphen">Paragraphen<a class="headerlink" href="#paragraphen" title="Permanent link">&para;</a></h3>
+<p><code>$paragraph-spacing</code></p>
+<h3 id="element-spacing">Element-Spacing<a class="headerlink" href="#element-spacing" title="Permanent link">&para;</a></h3>
+<p><code>$element-spacing-*</code></p>
+<h3 id="vertikales-padding">Vertikales Padding<a class="headerlink" href="#vertikales-padding" title="Permanent link">&para;</a></h3>
+<p><code>$top-bottom-padding-small</code></p>
+<h3 id="horizontales-padding">Horizontales Padding<a class="headerlink" href="#horizontales-padding" title="Permanent link">&para;</a></h3>
+<p><code>$left-right-padding-small</code></p>
+<hr />
+<h2 id="abstande-auen">Abstände (Außen)<a class="headerlink" href="#abstande-auen" title="Permanent link">&para;</a></h2>
+<h3 id="vertikales-margin">Vertikales Margin<a class="headerlink" href="#vertikales-margin" title="Permanent link">&para;</a></h3>
+<p><code>$top-bottom-margin-*</code></p>
+<h3 id="horizontales-margin">Horizontales Margin<a class="headerlink" href="#horizontales-margin" title="Permanent link">&para;</a></h3>
+<p><code>$left-right-margin-*</code></p>
+<hr />
+<h2 id="bild-text">Bild-Text<a class="headerlink" href="#bild-text" title="Permanent link">&para;</a></h2>
+<p><code>$image-text-behaviour-min-width</code> <code>$image-text-ratio-options</code></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Zurück zum Seitenanfang
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
+        
+          
+          <a href="../miscellaneous/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Sonstiges">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Zurück
+              </span>
+              <div class="md-ellipsis">
+                Sonstiges
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../icon-set/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Icon-Set">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Weiter
+              </span>
+              <div class="md-ellipsis">
+                Icon-Set
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Oveleon
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.expand", "navigation.sections", "navigation.top", "navigation.tabs", "navigation.footer", "navigation.tracking", "announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "search.highlight", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
