@@ -53,3 +53,10 @@ contao_theme_manager_core:
 
     Es wird nicht empfohlen Optionen zu entfernen, da `px` und `rem` im Framework genutzt werden.
 
+### Font-Display: Swap für Icon-Font nutzen
+
+```yaml title="config/config.yaml"
+contao_theme_manager_core:
+    compiler:
+        icon_font_display_swap: true
+```
