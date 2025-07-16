@@ -215,8 +215,8 @@ wobei folgende Einstellungen möglich sind:
 
 | Option       | Ergebnis                                                                                             | Beschreibung                                         |
 |--------------|------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| `uppercase`  | <span style="text-transform: uppercase">Die Textdarstellung dient der Hervorhebung von Text.</span>  | Jeder Buchstabe wird in Kleinbuchstaben umgewandelt. |
-| `lowercase`  | <span style="text-transform: lowercase">Die Textdarstellung dient der Hervorhebung von Text.</span>  | Jeder Buchstabe wird in Großbuchstaben umgewandelt.  |
+| `uppercase`  | <span style="text-transform: uppercase">Die Textdarstellung dient der Hervorhebung von Text.</span>  | Jeder Buchstabe wird in Großbuchstaben umgewandelt.  |
+| `lowercase`  | <span style="text-transform: lowercase">Die Textdarstellung dient der Hervorhebung von Text.</span>  | Jeder Buchstabe wird in Kleinbuchstaben umgewandelt. |
 | `capitalize` | <span style="text-transform: capitalize">Die Textdarstellung dient der Hervorhebung von Text.</span> | Jedes Wort beginnt mit einem Großbuchstaben.         |
 
 ---
