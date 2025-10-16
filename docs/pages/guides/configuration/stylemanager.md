@@ -68,3 +68,43 @@ und Footer im Layout hinzugefügt werden können:
   </archive>
 </archives>
 ```
+
+Ab Version [`2.4`](https://github.com/contao-thememanager/core/releases/tag/2.4.0) kann diese Konfiguration auch als
+YAML-Datei erstellt werden:
+```yaml
+gHeader:
+    children:
+        sorting: 100
+        title: Foo
+        description: Foo
+        cssClasses:
+            foo: Foo
+        chosen: true
+        blankOption: true
+        passToTemplate: true
+        extendLayout: true
+
+gMain:
+    children:
+        sorting: 100
+        title: Foo
+        description: Foo
+        cssClasses:
+            foo: Foo
+        chosen: true
+        blankOption: true
+        passToTemplate: true
+        extendLayout: true
+    
+gFooter:
+    children:
+        sorting: 100
+        title: Foo
+        description: Foo
+        cssClasses:
+            foo: Foo
+        chosen: true
+        blankOption: true
+        passToTemplate: true
+        extendLayout: true
+```
