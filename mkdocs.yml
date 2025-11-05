@@ -25,9 +25,10 @@ nav:
           - pages/guides/index.md
           - Demo:
               - Installation:
-                  - pages/guides/demo/product-installer.md
                   - pages/guides/demo/contao-manager-theme.md
                   - pages/guides/demo/contao-manager-artefakt.md
+          - Produkte:
+              - pages/guides/product-installer/product-installer.md
           - Skin:
               - pages/guides/skin/introduction.md
               - pages/guides/skin/setup-override.md
